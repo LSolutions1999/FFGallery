@@ -88,8 +88,9 @@
       <div id="bottom" aria-hidden="true"></div>
     </main>
 
+    <script src="../assets/gallery-images.js"></script>
     <script>
-      const galleryImages = [
+      const fallbackGalleryImages = [
         "../assets/gallery/44FF735F-F3C6-4C63-B566-2F4CD2851653 2.jpg",
         "../assets/gallery/44FF735F-F3C6-4C63-B566-2F4CD2851653.JPG",
         "../assets/gallery/93620CA5-29B3-4A3D-9C8E-4E2740B20E28.jpg",
@@ -215,12 +216,25 @@
 
       const galleryGrid = document.querySelector(".gallery-grid");
 
+      const galleryImages = Array.isArray(window.galleryImages) && window.galleryImages.length
+        ? window.galleryImages
+        : fallbackGalleryImages;
+
+      function makeThumbnailSource(source) {
+        if (typeof source !== "string" || !source.includes("res.cloudinary.com")) {
+          return source;
+        }
+
+        return source.replace("/upload/", "/upload/f_auto,q_auto,w_700/");
+      }
+
       galleryGrid.innerHTML = galleryImages
         .map((source) => {
           const resolved = new URL(source, document.baseURI).href;
+          const thumbnailSource = makeThumbnailSource(resolved);
           return `
             <a class="gallery-card" href="${resolved}" target="_blank" rel="noreferrer">
-              <img src="${resolved}" alt="" loading="lazy" />
+              <img src="${thumbnailSource}" alt="" loading="lazy" decoding="async" fetchpriority="low" />
             </a>
           `;
         })

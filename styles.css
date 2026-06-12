@@ -413,7 +413,7 @@ main {
 }
 
 .gallery-section.section-frame {
-  width: min(1700px, calc(100% - 2rem));
+  width: min(1900px, calc(100% - 1.5rem));
 }
 
 .gallery-section {
@@ -422,8 +422,8 @@ main {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
   align-items: stretch;
 }
 
@@ -454,9 +454,6 @@ main {
     min-width: min(100%, 420px);
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 680px) {
@@ -533,11 +530,6 @@ main {
   .hero::before,
   .gallery-hero::before {
     background-size: cover;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
   }
 
   .cta-icon.large {
