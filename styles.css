@@ -737,6 +737,29 @@ main {
     justify-content: flex-start;
   }
 
+  .contact-actions {
+    gap: 0.65rem;
+    margin-top: 1rem;
+  }
+
+  .contact-item {
+    width: min(100%, 240px);
+    gap: 0.3rem;
+  }
+
+  .contact-item-title {
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+  }
+
+  .contact-email-button {
+    min-height: 52px;
+    width: min(100%, 240px);
+    padding: 0.65rem 0.9rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+  }
+
   .shop-link {
     justify-self: end;
   }
