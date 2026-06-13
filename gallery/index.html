@@ -21,11 +21,33 @@
           <a class="top-link contact-link" href="#bottom">
             <img class="nav-image nav-image-contact" src="../assets/contacticongold.png" alt="Contact" />
           </a>
+          <div class="desktop-socials" aria-label="Social links">
+            <a class="desktop-social-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src="../assets/instagramgold.png" alt="" />
+            </a>
+            <a class="desktop-social-link" href="https://www.youtube.com/@facetedframes" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src="../assets/youtubegold.png" alt="" />
+            </a>
+            <a class="desktop-social-link" href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <img src="../assets/FBgold.png" alt="" />
+            </a>
+          </div>
         </div>
         <a class="top-link shop-link" href="../index.html">
           <img class="nav-image nav-image-home" src="../assets/homeicongold.png" alt="Home" />
         </a>
       </div>
+      <nav class="mobile-subheader" aria-label="Social links">
+        <a class="mobile-subheader-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <img src="../assets/instagramgold.png" alt="" />
+        </a>
+        <a class="mobile-subheader-link" href="https://www.youtube.com/@facetedframes" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <img src="../assets/youtubegold.png" alt="" />
+        </a>
+        <a class="mobile-subheader-link" href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <img src="../assets/FBgold.png" alt="" />
+        </a>
+      </nav>
     </header>
 
     <main id="top">
@@ -44,44 +66,36 @@
       </section>
 
       <section id="gallery-collection" class="content-section section-frame gallery-section">
-        <div class="gallery-grid" aria-label="Gallery collection"></div>
+        <nav class="section-nav" aria-label="Gallery sections"></nav>
+        <div class="gallery-sections" aria-label="Gallery collection"></div>
       </section>
 
       <section id="contact" class="contact-section">
         <div class="section-shell">
           <p class="eyebrow">Contact</p>
-          <h2>DM on Instagram</h2>
-          <p class="section-copy">
-            For commissions, custom requests, or questions, reach out on Instagram.
-          </p>
           <div class="contact-actions">
-            <a
-              class="cta-icon large"
-              href="https://www.instagram.com/facetedframes/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
-              <img src="../assets/instagram.png" alt="" />
-            </a>
-            <div class="contact-row">
+            <div class="contact-item">
+              <p class="contact-item-title">For General Inquires or Questions</p>
               <a
-                class="cta-icon small"
-                href="https://www.youtube.com/@facetedframes"
+                class="contact-email-button"
+                href="https://www.instagram.com/facetedframes/"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="YouTube"
+                aria-label="Instagram"
               >
-                <img src="../assets/youtube.webp" alt="" />
+                Instagram
               </a>
-              <a
-                class="cta-icon small"
-                href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-              >
-                <img src="../assets/facebook.png" alt="" />
+            </div>
+            <div class="contact-item">
+              <p class="contact-item-title">For Commission Inquires</p>
+              <a class="contact-email-button" href="mailto:facetedframes@gmail.com?subject=Commissions">
+                Commissions Email
+              </a>
+            </div>
+            <div class="contact-item">
+              <p class="contact-item-title">For Vendor Events</p>
+              <a class="contact-email-button" href="mailto:facetedframesvending@gmail.com?subject=Vending">
+                Vending Email
               </a>
             </div>
           </div>
@@ -216,11 +230,146 @@
         "../assets/gallery/Photoroom_20251205_104010.jpg"
       ];
 
-      const galleryGrid = document.querySelector(".gallery-grid");
+      const galleryNav = document.querySelector(".section-nav");
+      const gallerySectionsRoot = document.querySelector(".gallery-sections");
+      const sectionDefinitions = [
+        { key: "main", label: "Main", aliases: ["main"] },
+        { key: "commissions", label: "Commissions", aliases: ["commission", "commissions"] },
+        {
+          key: "lapidary-solutions",
+          label: "Lapidary Solutions",
+          aliases: ["lapidary", "lapidary-solutions", "lapidary solutions", "solutions"],
+        },
+        {
+          key: "production-lines",
+          label: "Production Lines",
+          aliases: ["production", "production-lines", "production lines", "line", "lines"],
+        },
+        { key: "vending", label: "Vending", aliases: ["vending"] },
+      ];
 
-      const galleryImages = Array.isArray(window.galleryImages) && window.galleryImages.length
-        ? window.galleryImages
-        : fallbackGalleryImages;
+      function toSlug(value) {
+        return String(value || "")
+          .toLowerCase()
+          .trim()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function humanize(value) {
+        const compact = String(value || "")
+          .replace(/[-_]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        if (!compact) {
+          return "Gallery";
+        }
+
+        return compact.replace(/(^|\s)\S/g, (character) => character.toUpperCase());
+      }
+
+      function extractCloudinaryInfo(source) {
+        try {
+          const url = new URL(source, document.baseURI);
+          const uploadIndex = url.pathname.indexOf("/upload/");
+
+          if (uploadIndex === -1) {
+            return null;
+          }
+
+          const parts = url.pathname
+            .slice(uploadIndex + "/upload/".length)
+            .split("/")
+            .filter(Boolean);
+
+          if (!parts.length) {
+            return null;
+          }
+
+          const versionIndex = parts[0] && /^v\d+$/.test(parts[0]) ? 1 : 0;
+          const resolvedParts = parts.slice(versionIndex);
+
+          if (!resolvedParts.length) {
+            return null;
+          }
+
+          return {
+            folder: resolvedParts.slice(0, -1).join("/"),
+            fileName: resolvedParts[resolvedParts.length - 1],
+          };
+        } catch {
+          return null;
+        }
+      }
+
+      function inferTagsFromName(fileName) {
+        const lowerName = String(fileName || "").toLowerCase();
+        const tags = [];
+
+        if (lowerName.includes("featured")) {
+          tags.push("featured");
+        }
+
+        if (lowerName.includes("pendant")) {
+          tags.push("pendants");
+        }
+
+        if (lowerName.includes("photoroom")) {
+          tags.push("studio");
+        }
+
+        return tags;
+      }
+
+      function normalizeAsset(source) {
+        if (typeof source === "string") {
+          const resolvedUrl = new URL(source, document.baseURI).href;
+          const cloudinaryInfo = extractCloudinaryInfo(resolvedUrl);
+          const fileName = cloudinaryInfo?.fileName || resolvedUrl.split("/").pop() || "";
+
+          return {
+            url: resolvedUrl,
+            folder: cloudinaryInfo?.folder || "",
+            tags: inferTagsFromName(fileName),
+            label: humanize(fileName.replace(/\.[^.]+$/, "")),
+          };
+        }
+
+        if (!source || typeof source !== "object") {
+          return null;
+        }
+
+        const resolvedUrl = source.secure_url || source.url || source.src || "";
+        const safeUrl = resolvedUrl ? new URL(resolvedUrl, document.baseURI).href : "";
+        const cloudinaryInfo = extractCloudinaryInfo(safeUrl);
+        const folder = String(source.asset_folder || source.folder || cloudinaryInfo?.folder || "").trim();
+        const tags = Array.isArray(source.tags) ? source.tags : [];
+        const fileName = source.public_id?.split("/").pop() || cloudinaryInfo?.fileName || safeUrl.split("/").pop() || "";
+
+        return {
+          url: safeUrl,
+          folder,
+          tags: tags.map(toSlug).filter(Boolean),
+          label: source.title || humanize(fileName.replace(/\.[^.]+$/, "")),
+        };
+      }
+
+      function sectionLabelFromKey(key) {
+        if (!key) {
+          return "Gallery";
+        }
+
+        const matchedDefinition = sectionDefinitions.find((definition) => definition.key === key);
+
+        if (matchedDefinition) {
+          return matchedDefinition.label;
+        }
+
+        return key.includes("/")
+          ? key.split("/").map(humanize).join(" / ")
+          : humanize(key);
+      }
 
       function makeThumbnailSource(source) {
         if (typeof source !== "string" || !source.includes("res.cloudinary.com")) {
@@ -230,17 +379,111 @@
         return source.replace("/upload/", "/upload/f_auto,q_auto,w_700/");
       }
 
-      galleryGrid.innerHTML = galleryImages
-        .map((source) => {
-          const resolved = new URL(source, document.baseURI).href;
-          const thumbnailSource = makeThumbnailSource(resolved);
-          return `
-            <a class="gallery-card" href="${resolved}" target="_blank" rel="noreferrer">
-              <img src="${thumbnailSource}" alt="" loading="lazy" decoding="async" fetchpriority="low" />
-            </a>
-          `;
-        })
-        .join("");
+      function buildSections(rawItems) {
+        const sections = new Map(sectionDefinitions.map((definition) => [
+          definition.key,
+          {
+            key: definition.key,
+            label: definition.label,
+            items: [],
+          },
+        ]));
+        const items = rawItems.map(normalizeAsset).filter((item) => item && item.url);
+
+        for (const item of items) {
+          const sectionKeys = new Set();
+          const searchableParts = [
+            item.folder,
+            ...String(item.folder || "").split("/"),
+            ...item.tags,
+          ]
+            .map(toSlug)
+            .filter(Boolean);
+
+          for (const definition of sectionDefinitions) {
+            const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(toSlug);
+            if (searchableParts.some((part) => aliases.includes(part))) {
+              sectionKeys.add(definition.key);
+            }
+          }
+
+          for (const sectionKey of sectionKeys) {
+            sections.get(sectionKey).items.push(item);
+          }
+        }
+
+        return sectionDefinitions.map((definition) => sections.get(definition.key));
+      }
+
+      function renderSection(section, index) {
+        const sectionId = `gallery-section-${toSlug(section.key) || index + 1}`;
+        const previewCount = section.items.length;
+        const sectionClass =
+          section.key === "main" || section.key === "production-lines"
+            ? " gallery-section-block--three-up"
+            : "";
+
+        return `
+          <section class="gallery-section-block${sectionClass}" id="${sectionId}">
+            <div class="gallery-section-header">
+              <div class="gallery-section-header-copy">
+                <h3>${section.label}</h3>
+                <span class="gallery-section-count">${previewCount} image${previewCount === 1 ? "" : "s"}</span>
+              </div>
+            </div>
+            <div class="gallery-grid">
+              ${section.items
+                .map((item) => {
+                  const thumbnailSource = makeThumbnailSource(item.url);
+                  return `
+                    <a class="gallery-card" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.label}">
+                      <img src="${thumbnailSource}" alt="${item.label}" loading="lazy" decoding="async" fetchpriority="low" />
+                    </a>
+                  `;
+                })
+                .join("")}
+            </div>
+          </section>
+        `;
+      }
+
+      const rawGalleryData = Array.isArray(window.gallerySections)
+        ? window.gallerySections
+        : Array.isArray(window.galleryImages)
+          ? window.galleryImages
+          : fallbackGalleryImages;
+
+      const sections = Array.isArray(rawGalleryData) && rawGalleryData.length
+        ? (
+            typeof rawGalleryData[0] === "object" &&
+            !Array.isArray(rawGalleryData[0]) &&
+            ("items" in rawGalleryData[0] || "images" in rawGalleryData[0] || "assets" in rawGalleryData[0])
+              ? rawGalleryData
+                  .filter((section) => toSlug(section.key || section.id || section.label || section.title || "") !== "removed")
+                  .map((section) => ({
+                    key: section.key || section.id || section.label || section.title || "collection",
+                    label: section.label || section.title || section.name || sectionLabelFromKey(section.key || section.id || "collection"),
+                    items: (section.items || section.images || section.assets || [])
+                      .map(normalizeAsset)
+                      .filter((item) => item && item.url),
+                  }))
+              : buildSections(rawGalleryData)
+        )
+        : [];
+
+      if (!sections.length) {
+        galleryNav.innerHTML = "";
+        gallerySectionsRoot.innerHTML = "<p class=\"section-copy\">No gallery images found yet.</p>";
+      } else {
+        galleryNav.innerHTML = sections
+          .map((section, index) => {
+            const targetId = `gallery-section-${toSlug(section.key) || index + 1}`;
+            return `<a class="section-pill" href="#${targetId}">${section.label}</a>`;
+          })
+          .join("");
+
+        gallerySectionsRoot.innerHTML = sections.map(renderSection).join("");
+      }
     </script>
   </body>
 </html>
