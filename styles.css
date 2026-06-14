@@ -767,7 +767,7 @@ main {
 .contact-actions {
   display: grid;
   justify-items: center;
-  gap: 0.65rem;
+  gap: 2.1rem;
   margin-top: 1rem;
   padding: 0;
   border: 0;
@@ -778,22 +778,23 @@ main {
 .contact-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-  width: min(100%, 680px);
+  gap: 3.5rem;
+  width: min(100%, 760px);
 }
 
 .contact-item {
   display: grid;
   justify-items: center;
-  gap: 0.55rem;
+  gap: 2.25rem;
   width: 100%;
-  padding: 0.35rem;
+  padding: 0.35rem 0.6rem;
   border: none;
   background: transparent;
 }
 
 .contact-item-title {
   margin: 0;
+  margin-bottom: 0.25rem;
   padding: 0;
   background: transparent;
   color: rgba(234, 227, 214, 0.9);
@@ -802,6 +803,7 @@ main {
   font-size: clamp(0.82rem, 1.25vw, 1rem);
   line-height: 1.45;
   text-align: center;
+  min-height: 3.1em;
 }
 
 .cta-icon {
@@ -827,7 +829,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 86px;
+  height: 108px;
+  min-height: 108px;
   width: 100%;
   padding: 1rem 1.45rem;
   border: 1px solid rgba(229, 197, 106, 0.8);
@@ -950,9 +953,21 @@ main {
     min-width: min(100%, 420px);
   }
 
-  .gallery-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .gallery-section-block--three-up .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-pair {
+    gap: 2rem;
+    width: min(100%, 700px);
+  }
+
+  .contact-item {
+    padding-inline: 0.35rem;
   }
 
 }
@@ -1108,33 +1123,36 @@ main {
   }
 
   .contact-actions {
-    gap: 0.65rem;
+    gap: 1.35rem;
     margin-top: 1rem;
   }
 
   .contact-pair {
     grid-template-columns: 1fr;
-    gap: 0.65rem;
-    width: min(100%, 240px);
+    gap: 1.05rem;
+    width: min(100%, 320px);
   }
 
   .contact-item {
-    width: min(100%, 240px);
-    gap: 0.3rem;
+    width: 100%;
+    gap: 0.9rem;
+    padding-inline: 0;
   }
 
   .contact-item-title {
-    font-size: 0.64rem;
-    letter-spacing: 0.14em;
+    min-height: 0;
+    font-size: clamp(0.8rem, 2.8vw, 0.92rem);
+    letter-spacing: 0.16em;
   }
 
   .contact-email-button {
-    min-height: 52px;
-    width: min(100%, 240px);
-    padding: 0.65rem 0.75rem;
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
-    white-space: nowrap;
+    min-height: 96px;
+    height: 96px;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: clamp(0.78rem, 2.7vw, 0.9rem);
+    letter-spacing: 0.22em;
+    white-space: normal;
   }
 
   .shop-link {
