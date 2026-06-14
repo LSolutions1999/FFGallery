@@ -13,6 +13,7 @@
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
   --header-h: clamp(92px, 10vw, 120px);
   --header-logo-h: clamp(88px, 9.4vw, 114px);
+  --header-nav-size: clamp(34px, 3.8vw, 54px);
   --header-social-size: clamp(22px, 3vw, 48px);
 }
 
@@ -394,8 +395,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: var(--header-logo-h);
-  height: var(--header-logo-h);
+  width: var(--header-nav-size);
+  height: var(--header-nav-size);
   transition: transform 160ms ease, filter 160ms ease, opacity 160ms ease;
 }
 
@@ -813,6 +814,7 @@ main {
 @media (max-width: 680px) {
   :root {
     --header-logo-h: clamp(56px, 14vw, 74px);
+    --header-nav-size: clamp(30px, 5vw, 42px);
     --header-social-size: clamp(16px, 3.2vw, 24px);
   }
 
@@ -872,8 +874,8 @@ main {
   }
 
   .top-link {
-    width: var(--header-logo-h);
-    height: var(--header-logo-h);
+    width: var(--header-nav-size);
+    height: var(--header-nav-size);
     padding: 0;
     border: none;
     border-radius: 0;
