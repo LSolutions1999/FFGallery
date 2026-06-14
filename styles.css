@@ -962,7 +962,7 @@ main {
   }
 
   .topbar-left {
-    gap: clamp(1rem, 2.6vw, 1.65rem);
+    gap: clamp(0.7rem, 1.8vw, 1.15rem);
   }
 
   .topbar-icons {
@@ -999,13 +999,13 @@ main {
   }
 
   .mobile-header-link {
-    width: clamp(30px, 6vw, 42px);
-    height: clamp(30px, 6vw, 42px);
+    width: clamp(24px, 4.8vw, 32px);
+    height: clamp(24px, 4.8vw, 32px);
   }
 
   .mobile-header-link--contact {
-    width: clamp(38px, 7.6vw, 52px);
-    height: clamp(38px, 7.6vw, 52px);
+    width: clamp(30px, 6vw, 40px);
+    height: clamp(30px, 6vw, 40px);
   }
 
   .mobile-header-link:hover,
