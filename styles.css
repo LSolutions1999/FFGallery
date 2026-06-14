@@ -351,7 +351,7 @@ main {
 .mobile-header-links {
   display: none;
   align-items: center;
-  gap: 0.28rem;
+  gap: clamp(0.6rem, 1.6vw, 1.1rem);
 }
 
 .mobile-header-link {
@@ -950,7 +950,7 @@ main {
 
   .desktop-socials--right {
     display: flex;
-    gap: clamp(0.35rem, 1.2vw, 0.65rem);
+    gap: clamp(0.75rem, 2vw, 1.2rem);
   }
 
   .desktop-socials--right .desktop-social-link:nth-child(-n + 2) {
@@ -958,11 +958,11 @@ main {
   }
 
   .header-right {
-    gap: clamp(0.35rem, 1vw, 0.6rem);
+    gap: clamp(0.7rem, 1.8vw, 1.2rem);
   }
 
   .topbar-left {
-    gap: clamp(0.3rem, 0.9vw, 0.55rem);
+    gap: clamp(0.7rem, 1.8vw, 1.15rem);
   }
 
   .topbar-icons {
@@ -1062,9 +1062,10 @@ main {
   .contact-email-button {
     min-height: 52px;
     width: min(100%, 240px);
-    padding: 0.65rem 0.9rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.16em;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
   }
 
   .shop-link {
