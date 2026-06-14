@@ -1,253 +1,346 @@
 window.gallerySections = [
   {
-    "key": "main",
-    "label": "Main",
+    "key": "signature-pieces",
+    "label": "Signature Pieces",
     "aliases": [
-      "main"
+      "main",
+      "signature",
+      "signature pieces"
     ],
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234298/IMG_3015_vnpcat.jpg",
-        "public_id": "IMG_3015_vnpcat",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234219/IMG_8728_xcxucn.jpg",
-        "public_id": "IMG_8728_xcxucn",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234210/IMG_3012_cmswie.jpg",
-        "public_id": "IMG_3012_cmswie",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234097/IMG_3615_fkor7m.jpg",
-        "public_id": "IMG_3615_fkor7m",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234046/IMG_2666_gyw6ey.jpg",
-        "public_id": "IMG_2666_gyw6ey",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234041/IMG_2799_aplmof.jpg",
-        "public_id": "IMG_2799_aplmof",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
-        "public_id": "IMG_0852_mrduiw",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233357/IMG_6715_qeufsw.jpg",
         "public_id": "IMG_6715_qeufsw",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
-        "public_id": "IMG_9562_2_dm6ikk",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232982/IMG_0488_d2fgiu.jpg",
-        "public_id": "IMG_0488_d2fgiu",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232891/IMG_0480_zci19x.jpg",
-        "public_id": "IMG_0480_zci19x",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232801/IMG_9011_gdv4yi.jpg",
-        "public_id": "IMG_9011_gdv4yi",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232561/IMG_7048_zocmuc.jpg",
-        "public_id": "IMG_7048_zocmuc",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232386/IMG_7186_xg3lzu.jpg",
-        "public_id": "IMG_7186_xg3lzu",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232263/IMG_5137_xguvp5.jpg",
-        "public_id": "IMG_5137_xguvp5",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
         "public_id": "IMG_4882_lqetkf",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
         "public_id": "IMG_4884_szwk0c",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
-        "public_id": "IMG_4264_hf2n2x",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231413/featured_knllig.jpg",
-        "public_id": "featured_knllig",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231402/IMG_0258_zvt9jl.jpg",
-        "public_id": "IMG_0258_zvt9jl",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
-        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231348/Photoroom_20251002_082120_yrmaqc.jpg",
         "public_id": "Photoroom_20251002_082120_yrmaqc",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231346/Photoroom_20251031_173357_vthyjc.jpg",
-        "public_id": "Photoroom_20251031_173357_vthyjc",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231342/Photoroom_20250921_122646_m5gkei.jpg",
-        "public_id": "Photoroom_20250921_122646_m5gkei",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231332/Photoroom_20251031_173206_nrlmit.jpg",
         "public_id": "Photoroom_20251031_173206_nrlmit",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231325/Photoroom_20250920_173235_bqatc0.jpg",
-        "public_id": "Photoroom_20250920_173235_bqatc0",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231311/IMG_1619_ogwvs1.jpg",
-        "public_id": "IMG_1619_ogwvs1",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
-        "public_id": "IMG_9085_jvlsmk",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231123/IMG_2383_fkn0sv.jpg",
-        "public_id": "IMG_2383_fkn0sv",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
-        "public_id": "IMG_3481_t7rf3d",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230933/IMG_3013_nnbr1f.jpg",
-        "public_id": "IMG_3013_nnbr1f",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230607/IMG_0850_bblvly.jpg",
         "public_id": "IMG_0850_bblvly",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230137/IMG_3508_oscpbj.jpg",
-        "public_id": "IMG_3508_oscpbj",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230088/IMG_2326_n312bs.jpg",
-        "public_id": "IMG_2326_n312bs",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229951/IMG_3448_wdwxtx.jpg",
         "public_id": "IMG_3448_wdwxtx",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229764/IMG_2637_xsnqts.jpg",
-        "public_id": "IMG_2637_xsnqts",
-        "asset_folder": "facetedframes/Main",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228868/IMG_8668_tg2xqx.jpg",
-        "public_id": "IMG_8668_tg2xqx",
-        "asset_folder": "facetedframes/Main",
+        "asset_folder": "facetedframes/1 Signature Pieces",
         "tags": []
       }
     ]
   },
   {
-    "key": "commissions",
-    "label": "Commissions",
+    "key": "featured-designs",
+    "label": "Featured Designs",
+    "aliases": [
+      "featured",
+      "featured designs"
+    ],
+    "items": [
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234219/IMG_8728_xcxucn.jpg",
+        "public_id": "IMG_8728_xcxucn",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234210/IMG_3012_cmswie.jpg",
+        "public_id": "IMG_3012_cmswie",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234097/IMG_3615_fkor7m.jpg",
+        "public_id": "IMG_3615_fkor7m",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234046/IMG_2666_gyw6ey.jpg",
+        "public_id": "IMG_2666_gyw6ey",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234041/IMG_2799_aplmof.jpg",
+        "public_id": "IMG_2799_aplmof",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
+        "public_id": "IMG_0852_mrduiw",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
+        "public_id": "IMG_9562_2_dm6ikk",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232982/IMG_0488_d2fgiu.jpg",
+        "public_id": "IMG_0488_d2fgiu",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232891/IMG_0480_zci19x.jpg",
+        "public_id": "IMG_0480_zci19x",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232801/IMG_9011_gdv4yi.jpg",
+        "public_id": "IMG_9011_gdv4yi",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232561/IMG_7048_zocmuc.jpg",
+        "public_id": "IMG_7048_zocmuc",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232386/IMG_7186_xg3lzu.jpg",
+        "public_id": "IMG_7186_xg3lzu",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232263/IMG_5137_xguvp5.jpg",
+        "public_id": "IMG_5137_xguvp5",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
+        "public_id": "IMG_4264_hf2n2x",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231413/featured_knllig.jpg",
+        "public_id": "featured_knllig",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231402/IMG_0258_zvt9jl.jpg",
+        "public_id": "IMG_0258_zvt9jl",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
+        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231346/Photoroom_20251031_173357_vthyjc.jpg",
+        "public_id": "Photoroom_20251031_173357_vthyjc",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231342/Photoroom_20250921_122646_m5gkei.jpg",
+        "public_id": "Photoroom_20250921_122646_m5gkei",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231325/Photoroom_20250920_173235_bqatc0.jpg",
+        "public_id": "Photoroom_20250920_173235_bqatc0",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231311/IMG_1619_ogwvs1.jpg",
+        "public_id": "IMG_1619_ogwvs1",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
+        "public_id": "IMG_9085_jvlsmk",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231123/IMG_2383_fkn0sv.jpg",
+        "public_id": "IMG_2383_fkn0sv",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
+        "public_id": "IMG_3481_t7rf3d",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230137/IMG_3508_oscpbj.jpg",
+        "public_id": "IMG_3508_oscpbj",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230088/IMG_2326_n312bs.jpg",
+        "public_id": "IMG_2326_n312bs",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229764/IMG_2637_xsnqts.jpg",
+        "public_id": "IMG_2637_xsnqts",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228868/IMG_8668_tg2xqx.jpg",
+        "public_id": "IMG_8668_tg2xqx",
+        "asset_folder": "facetedframes/2 Featured Designs",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "key": "production-lines",
+    "label": "Production Lines",
+    "aliases": [
+      "production",
+      "production lines",
+      "production-line",
+      "line",
+      "lines"
+    ],
+    "items": [
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233937/IMG_2214_pwckkb.jpg",
+        "public_id": "IMG_2214_pwckkb",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233887/IMG_0805_lsemfp.jpg",
+        "public_id": "IMG_0805_lsemfp",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233865/IMG_2210_gbshza.jpg",
+        "public_id": "IMG_2210_gbshza",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233702/IMG_0801_obl4wc.jpg",
+        "public_id": "IMG_0801_obl4wc",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233334/IMG_8133_zcl5cu.jpg",
+        "public_id": "IMG_8133_zcl5cu",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230893/IMG_2208_uvlo89.jpg",
+        "public_id": "IMG_2208_uvlo89",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230868/IMG_0804_mybxe6.jpg",
+        "public_id": "IMG_0804_mybxe6",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230619/IMG_2382_w453qr.jpg",
+        "public_id": "IMG_2382_w453qr",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229916/IMG_2374_xmckb7.jpg",
+        "public_id": "IMG_2374_xmckb7",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229525/IMG_2378_a0sxfn.jpg",
+        "public_id": "IMG_2378_a0sxfn",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228887/IMG_0885_ijwqsn.jpg",
+        "public_id": "IMG_0885_ijwqsn",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228857/IMG_0873_axeyg9.jpg",
+        "public_id": "IMG_0873_axeyg9",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228617/IMG_2257_2_awkhcr.jpg",
+        "public_id": "IMG_2257_2_awkhcr",
+        "asset_folder": "facetedframes/3 Production Lines",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "key": "previous-commissions",
+    "label": "Previous Commissions",
     "aliases": [
       "commission",
-      "commissions"
+      "commissions",
+      "previous commission",
+      "previous commissions"
     ],
     "items": [
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231347/Photoroom_20251205_104010_t4ttyd.jpg",
         "public_id": "Photoroom_20251205_104010_t4ttyd",
-        "asset_folder": "facetedframes/Commissions",
+        "asset_folder": "facetedframes/4 Previous Commissions",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230422/IMG_9965_v0jhuj.jpg",
         "public_id": "IMG_9965_v0jhuj",
-        "asset_folder": "facetedframes/Commissions",
+        "asset_folder": "facetedframes/4 Previous Commissions",
         "tags": []
       }
     ]
@@ -265,137 +358,50 @@ window.gallerySections = [
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
         "public_id": "IMG_0261_achvc6",
-        "asset_folder": "facetedframes/Lapidary Solutions",
+        "asset_folder": "facetedframes/5 Lapidary Solutions",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231747/IMG_2015_fkosoi.jpg",
         "public_id": "IMG_2015_fkosoi",
-        "asset_folder": "facetedframes/Lapidary Solutions",
+        "asset_folder": "facetedframes/5 Lapidary Solutions",
         "tags": []
       }
     ]
   },
   {
-    "key": "production-lines",
-    "label": "Production Lines",
+    "key": "curation-events",
+    "label": "Curation Events",
     "aliases": [
-      "production",
-      "production-lines",
-      "production lines",
-      "line",
-      "lines"
-    ],
-    "items": [
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233937/IMG_2214_pwckkb.jpg",
-        "public_id": "IMG_2214_pwckkb",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233887/IMG_0805_lsemfp.jpg",
-        "public_id": "IMG_0805_lsemfp",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233865/IMG_2210_gbshza.jpg",
-        "public_id": "IMG_2210_gbshza",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233702/IMG_0801_obl4wc.jpg",
-        "public_id": "IMG_0801_obl4wc",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233334/IMG_8133_zcl5cu.jpg",
-        "public_id": "IMG_8133_zcl5cu",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230893/IMG_2208_uvlo89.jpg",
-        "public_id": "IMG_2208_uvlo89",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230868/IMG_0804_mybxe6.jpg",
-        "public_id": "IMG_0804_mybxe6",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230619/IMG_2382_w453qr.jpg",
-        "public_id": "IMG_2382_w453qr",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229916/IMG_2374_xmckb7.jpg",
-        "public_id": "IMG_2374_xmckb7",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229525/IMG_2378_a0sxfn.jpg",
-        "public_id": "IMG_2378_a0sxfn",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228887/IMG_0885_ijwqsn.jpg",
-        "public_id": "IMG_0885_ijwqsn",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228857/IMG_0873_axeyg9.jpg",
-        "public_id": "IMG_0873_axeyg9",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228617/IMG_2257_2_awkhcr.jpg",
-        "public_id": "IMG_2257_2_awkhcr",
-        "asset_folder": "facetedframes/Production Lines",
-        "tags": []
-      }
-    ]
-  },
-  {
-    "key": "vending",
-    "label": "Vending",
-    "aliases": [
+      "curation",
+      "curation events",
+      "event",
+      "events",
       "vending"
     ],
     "items": [
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234222/IMG_4977_fjrlym.jpg",
         "public_id": "IMG_4977_fjrlym",
-        "asset_folder": "facetedframes/Vending",
+        "asset_folder": "facetedframes/6 Curation Events",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232206/IMG_4976_xyuw5b.jpg",
         "public_id": "IMG_4976_xyuw5b",
-        "asset_folder": "facetedframes/Vending",
+        "asset_folder": "facetedframes/6 Curation Events",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229794/IMG_4521_k7mmjh.jpg",
         "public_id": "IMG_4521_k7mmjh",
-        "asset_folder": "facetedframes/Vending",
+        "asset_folder": "facetedframes/6 Curation Events",
         "tags": []
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229454/IMG_4975_nkcfea.jpg",
         "public_id": "IMG_4975_nkcfea",
-        "asset_folder": "facetedframes/Vending",
+        "asset_folder": "facetedframes/6 Curation Events",
         "tags": []
       }
     ]
@@ -413,7 +419,6 @@ window.gallerySections = [
   }
 ];
 window.galleryImages = [
-  "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234298/IMG_3015_vnpcat.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234222/IMG_4977_fjrlym.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234219/IMG_8728_xcxucn.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781234210/IMG_3012_cmswie.jpg",
@@ -453,7 +458,6 @@ window.galleryImages = [
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231123/IMG_2383_fkn0sv.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
-  "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230933/IMG_3013_nnbr1f.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230893/IMG_2208_uvlo89.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230868/IMG_0804_mybxe6.jpg",
   "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230619/IMG_2382_w453qr.jpg",

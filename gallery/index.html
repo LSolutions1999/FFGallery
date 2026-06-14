@@ -18,26 +18,36 @@
       </a>
       <div class="header-overlay">
         <div class="topbar-left">
-          <a class="top-link contact-link" href="#bottom">
-            <img class="nav-image nav-image-contact" src="../assets/contacticongold.png" alt="Contact" />
-          </a>
-          <div class="desktop-socials" aria-label="Social links">
-            <a class="desktop-social-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <img src="../assets/instagramgold.png" alt="" />
+          <div class="topbar-icons">
+            <a class="top-link contact-link" href="#bottom">
+              <img class="nav-image nav-image-contact" src="../assets/contacticongold.png" alt="Contact" />
             </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="desktop-socials desktop-socials--right" aria-label="Social links">
             <a class="desktop-social-link" href="https://www.youtube.com/@facetedframes" target="_blank" rel="noreferrer" aria-label="YouTube">
               <img src="../assets/youtubegold.png" alt="" />
             </a>
             <a class="desktop-social-link" href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web" target="_blank" rel="noreferrer" aria-label="Facebook">
               <img src="../assets/FBgold.png" alt="" />
             </a>
+            <a class="desktop-social-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src="../assets/instagramgold.png" alt="" />
+            </a>
           </div>
+          <a class="top-link shop-link" href="../index.html">
+            <img class="nav-image nav-image-home" src="../assets/homeicongold.png" alt="Home" />
+          </a>
         </div>
-        <a class="top-link shop-link" href="../index.html">
-          <img class="nav-image nav-image-home" src="../assets/homeicongold.png" alt="Home" />
-        </a>
       </div>
       <nav class="mobile-subheader" aria-label="Social links">
+        <div class="mobile-section-menu">
+          <button class="section-menu-toggle" type="button" aria-expanded="false" aria-controls="section-menu-panel-mobile">
+            <img src="../assets/downchevron.png" alt="" aria-hidden="true" />
+          </button>
+          <div class="section-menu-panel" id="section-menu-panel-mobile" hidden></div>
+        </div>
         <a class="mobile-subheader-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
           <img src="../assets/instagramgold.png" alt="" />
         </a>
@@ -49,6 +59,14 @@
         </a>
       </nav>
     </header>
+    <nav class="desktop-subheader desktop-subheader--gallery" aria-label="Gallery sections">
+      <div class="desktop-section-menu">
+        <button class="section-menu-toggle" type="button" aria-expanded="false" aria-controls="section-menu-panel">
+          <img src="../assets/downchevron.png" alt="" aria-hidden="true" />
+        </button>
+        <div class="section-menu-panel" id="section-menu-panel" hidden></div>
+      </div>
+    </nav>
 
     <main id="top">
       <section class="hero gallery-hero">
@@ -66,7 +84,6 @@
       </section>
 
       <section id="gallery-collection" class="content-section section-frame gallery-section">
-        <nav class="section-nav" aria-label="Gallery sections"></nav>
         <div class="gallery-sections" aria-label="Gallery collection"></div>
       </section>
 
@@ -74,29 +91,19 @@
         <div class="section-shell">
           <p class="eyebrow">Contact</p>
           <div class="contact-actions">
-            <div class="contact-item">
-              <p class="contact-item-title">For General Inquires or Questions</p>
-              <a
-                class="contact-email-button"
-                href="https://www.instagram.com/facetedframes/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-              >
-                Instagram
-              </a>
-            </div>
-            <div class="contact-item">
-              <p class="contact-item-title">For Commission Inquires</p>
-              <a class="contact-email-button" href="mailto:facetedframes@gmail.com?subject=Commissions">
-                Commissions Email
-              </a>
-            </div>
-            <div class="contact-item">
-              <p class="contact-item-title">For Vendor Events</p>
-              <a class="contact-email-button" href="mailto:facetedframesvending@gmail.com?subject=Vending">
-                Vending Email
-              </a>
+            <div class="contact-pair">
+              <div class="contact-item">
+                <p class="contact-item-title">Commissions, Inquires,<br />and Questions</p>
+                <a class="contact-email-button" href="mailto:facetedframes@gmail.com?subject=Commissions">
+                  General Correspondence
+                </a>
+              </div>
+              <div class="contact-item">
+                <p class="contact-item-title">Curating Exhibitions<br />and Events</p>
+                <a class="contact-email-button" href="mailto:facetedframesvending@gmail.com?subject=Vending">
+                  Curation<br />Proposals
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -230,22 +237,29 @@
         "../assets/gallery/Photoroom_20251205_104010.jpg"
       ];
 
-      const galleryNav = document.querySelector(".section-nav");
       const gallerySectionsRoot = document.querySelector(".gallery-sections");
+      const sectionMenus = Array.from(document.querySelectorAll(".section-menu-toggle"))
+        .map((toggle) => {
+          const menuRoot = toggle.closest(".desktop-section-menu, .mobile-section-menu");
+          const panel = menuRoot ? menuRoot.querySelector(".section-menu-panel") : null;
+          return menuRoot && panel ? { root: menuRoot, toggle, panel, closeTimer: null } : null;
+        })
+        .filter(Boolean);
       const sectionDefinitions = [
-        { key: "main", label: "Main", aliases: ["main"] },
-        { key: "commissions", label: "Commissions", aliases: ["commission", "commissions"] },
+        { key: "signature-pieces", label: "Signature Pieces", aliases: ["main", "signature", "signature pieces"] },
+        { key: "featured-designs", label: "Featured Designs", aliases: ["featured", "featured designs"] },
+        { key: "production-lines", label: "Production Lines", aliases: ["production", "production lines", "production-line", "line", "lines"] },
+        { key: "previous-commissions", label: "Previous Commissions", aliases: ["commission", "commissions", "previous commission", "previous commissions"] },
         {
           key: "lapidary-solutions",
           label: "Lapidary Solutions",
           aliases: ["lapidary", "lapidary-solutions", "lapidary solutions", "solutions"],
         },
         {
-          key: "production-lines",
-          label: "Production Lines",
-          aliases: ["production", "production-lines", "production lines", "line", "lines"],
+          key: "curation-events",
+          label: "Curation Events",
+          aliases: ["curation", "curation events", "event", "events", "vending"],
         },
-        { key: "vending", label: "Vending", aliases: ["vending"] },
       ];
 
       function toSlug(value) {
@@ -254,6 +268,16 @@
           .trim()
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/^-+|-+$/g, "");
+      }
+
+      function stripNumericPrefix(value) {
+        return String(value || "")
+          .replace(/^\s*\d+\s*/, "")
+          .trim();
+      }
+
+      function normalizeSectionToken(value) {
+        return toSlug(stripNumericPrefix(value));
       }
 
       function humanize(value) {
@@ -328,12 +352,12 @@
           const cloudinaryInfo = extractCloudinaryInfo(resolvedUrl);
           const fileName = cloudinaryInfo?.fileName || resolvedUrl.split("/").pop() || "";
 
-          return {
-            url: resolvedUrl,
-            folder: cloudinaryInfo?.folder || "",
-            tags: inferTagsFromName(fileName),
-            label: humanize(fileName.replace(/\.[^.]+$/, "")),
-          };
+        return {
+          url: resolvedUrl,
+          folder: cloudinaryInfo?.folder || "",
+          tags: inferTagsFromName(fileName),
+          label: stripNumericPrefix(humanize(fileName.replace(/\.[^.]+$/, ""))),
+        };
         }
 
         if (!source || typeof source !== "object") {
@@ -351,7 +375,7 @@
           url: safeUrl,
           folder,
           tags: tags.map(toSlug).filter(Boolean),
-          label: source.title || humanize(fileName.replace(/\.[^.]+$/, "")),
+          label: stripNumericPrefix(source.title || humanize(fileName.replace(/\.[^.]+$/, ""))),
         };
       }
 
@@ -366,9 +390,10 @@
           return matchedDefinition.label;
         }
 
-        return key.includes("/")
-          ? key.split("/").map(humanize).join(" / ")
-          : humanize(key);
+        const normalizedKey = stripNumericPrefix(key);
+        return normalizedKey.includes("/")
+          ? normalizedKey.split("/").map((part) => humanize(stripNumericPrefix(part))).join(" / ")
+          : humanize(normalizedKey);
       }
 
       function makeThumbnailSource(source) {
@@ -377,6 +402,60 @@
         }
 
         return source.replace("/upload/", "/upload/f_auto,q_auto,w_700/");
+      }
+
+      function isFeaturedItem(item) {
+        const searchable = [
+          item?.label,
+          item?.title,
+          item?.name,
+          item?.public_id,
+          item?.folder,
+          item?.url,
+        ]
+          .map(normalizeSectionToken)
+          .join(" ");
+
+        return searchable.includes("featured");
+      }
+
+      function normalizeLegacyGallerySections(rawSections) {
+        const sections = new Map(sectionDefinitions.map((definition) => [
+          definition.key,
+          {
+            key: definition.key,
+            label: definition.label,
+            items: [],
+          },
+        ]));
+
+        for (const section of rawSections) {
+          const sectionKey = normalizeSectionToken(section.key || section.id || section.label || section.title || "");
+          const items = (section.items || section.images || section.assets || [])
+            .map(normalizeAsset)
+            .filter((item) => item && item.url);
+
+          if (sectionKey === "main") {
+            for (const item of items) {
+              const targetKey = isFeaturedItem(item) ? "featured-designs" : "signature-pieces";
+              sections.get(targetKey).items.push(item);
+            }
+            continue;
+          }
+
+          const remappedKey =
+            sectionKey === "commissions"
+              ? "previous-commissions"
+              : sectionKey === "vending"
+                ? "curation-events"
+                : sectionKey;
+
+          if (sections.has(remappedKey)) {
+            sections.get(remappedKey).items.push(...items);
+          }
+        }
+
+        return sectionDefinitions.map((definition) => sections.get(definition.key));
       }
 
       function buildSections(rawItems) {
@@ -397,11 +476,11 @@
             ...String(item.folder || "").split("/"),
             ...item.tags,
           ]
-            .map(toSlug)
+            .map(normalizeSectionToken)
             .filter(Boolean);
 
           for (const definition of sectionDefinitions) {
-            const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(toSlug);
+            const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(normalizeSectionToken);
             if (searchableParts.some((part) => aliases.includes(part))) {
               sectionKeys.add(definition.key);
             }
@@ -418,13 +497,9 @@
       function renderSection(section, index) {
         const sectionId = `gallery-section-${toSlug(section.key) || index + 1}`;
         const previewCount = section.items.length;
-        const sectionClass =
-          section.key === "main" || section.key === "production-lines"
-            ? " gallery-section-block--three-up"
-            : "";
 
         return `
-          <section class="gallery-section-block${sectionClass}" id="${sectionId}">
+          <section class="gallery-section-block" id="${sectionId}">
             <div class="gallery-section-header">
               <div class="gallery-section-header-copy">
                 <h3>${section.label}</h3>
@@ -447,6 +522,60 @@
         `;
       }
 
+      function scrollToSection(sectionId, behavior = "smooth") {
+        const target = document.getElementById(sectionId);
+
+        if (!target) {
+          return;
+        }
+
+        const header = document.querySelector(".site-header");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior,
+        });
+      }
+
+      function closeSectionMenu() {
+        for (const menu of sectionMenus) {
+          if (menu.closeTimer) {
+            window.clearTimeout(menu.closeTimer);
+            menu.closeTimer = null;
+          }
+
+          menu.toggle.setAttribute("aria-expanded", "false");
+          menu.toggle.classList.remove("is-open");
+          menu.panel.classList.remove("is-open");
+          menu.panel.setAttribute("aria-hidden", "true");
+          menu.closeTimer = window.setTimeout(() => {
+            menu.panel.hidden = true;
+            menu.closeTimer = null;
+          }, 220);
+        }
+      }
+
+      function openSectionMenu(menu) {
+        if (!menu) {
+          return;
+        }
+
+        if (menu.closeTimer) {
+          window.clearTimeout(menu.closeTimer);
+          menu.closeTimer = null;
+        }
+
+        menu.panel.hidden = false;
+        menu.panel.setAttribute("aria-hidden", "false");
+        requestAnimationFrame(() => {
+          menu.panel.classList.add("is-open");
+          menu.toggle.classList.add("is-open");
+          menu.toggle.setAttribute("aria-expanded", "true");
+        });
+      }
+
       const rawGalleryData = Array.isArray(window.gallerySections)
         ? window.gallerySections
         : Array.isArray(window.galleryImages)
@@ -458,31 +587,70 @@
             typeof rawGalleryData[0] === "object" &&
             !Array.isArray(rawGalleryData[0]) &&
             ("items" in rawGalleryData[0] || "images" in rawGalleryData[0] || "assets" in rawGalleryData[0])
-              ? rawGalleryData
-                  .filter((section) => toSlug(section.key || section.id || section.label || section.title || "") !== "removed")
-                  .map((section) => ({
-                    key: section.key || section.id || section.label || section.title || "collection",
-                    label: section.label || section.title || section.name || sectionLabelFromKey(section.key || section.id || "collection"),
-                    items: (section.items || section.images || section.assets || [])
-                      .map(normalizeAsset)
-                      .filter((item) => item && item.url),
-                  }))
+              ? normalizeLegacyGallerySections(
+                  rawGalleryData.filter((section) => normalizeSectionToken(section.key || section.id || section.label || section.title || "") !== "removed"),
+                )
               : buildSections(rawGalleryData)
         )
         : [];
 
       if (!sections.length) {
-        galleryNav.innerHTML = "";
+        for (const menu of sectionMenus) {
+          menu.panel.innerHTML = "";
+        }
         gallerySectionsRoot.innerHTML = "<p class=\"section-copy\">No gallery images found yet.</p>";
       } else {
-        galleryNav.innerHTML = sections
+        const sectionLinksMarkup = sections
           .map((section, index) => {
             const targetId = `gallery-section-${toSlug(section.key) || index + 1}`;
-            return `<a class="section-pill" href="#${targetId}">${section.label}</a>`;
+            const label = stripNumericPrefix(section.label);
+            return `<a class="section-pill" href="#${targetId}" data-target="${targetId}">${label}</a>`;
           })
           .join("");
 
+        for (const menu of sectionMenus) {
+          menu.panel.innerHTML = sectionLinksMarkup;
+        }
+
         gallerySectionsRoot.innerHTML = sections.map(renderSection).join("");
+
+        document.querySelectorAll(".section-menu-panel .section-pill").forEach((pill) => {
+          pill.addEventListener("click", (event) => {
+            const targetId = pill.getAttribute("data-target");
+
+            if (!targetId) {
+              return;
+            }
+
+            event.preventDefault();
+            history.replaceState(null, "", `#${targetId}`);
+            closeSectionMenu();
+            scrollToSection(targetId);
+          });
+        });
+
+        if (location.hash) {
+          const targetId = location.hash.slice(1);
+          requestAnimationFrame(() => scrollToSection(targetId, "auto"));
+        }
+
+        for (const menu of sectionMenus) {
+          menu.toggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            const expanded = menu.toggle.getAttribute("aria-expanded") === "true";
+
+            if (expanded) {
+              closeSectionMenu();
+            } else {
+              openSectionMenu(menu);
+            }
+          });
+
+          menu.panel.addEventListener("click", (event) => {
+            event.stopPropagation();
+          });
+        }
       }
     </script>
   </body>

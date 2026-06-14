@@ -8,19 +8,20 @@ const folder = process.env.CLOUDINARY_FOLDER || "facetedframes";
 const outputPath = process.env.OUTPUT_PATH || path.resolve("assets", "gallery-images.json");
 const jsOutputPath = process.env.OUTPUT_JS_PATH || path.resolve("assets", "gallery-images.js");
 const sectionDefinitions = [
-  { key: "main", label: "Main", aliases: ["main"] },
-  { key: "commissions", label: "Commissions", aliases: ["commission", "commissions"] },
+  { key: "signature-pieces", label: "Signature Pieces", aliases: ["main", "signature", "signature pieces"] },
+  { key: "featured-designs", label: "Featured Designs", aliases: ["featured", "featured designs"] },
+  { key: "production-lines", label: "Production Lines", aliases: ["production", "production lines", "production-line", "line", "lines"] },
+  { key: "previous-commissions", label: "Previous Commissions", aliases: ["commission", "commissions", "previous commission", "previous commissions"] },
   {
     key: "lapidary-solutions",
     label: "Lapidary Solutions",
     aliases: ["lapidary", "lapidary-solutions", "lapidary solutions", "solutions"],
   },
   {
-    key: "production-lines",
-    label: "Production Lines",
-    aliases: ["production", "production-lines", "production lines", "line", "lines"],
+    key: "curation-events",
+    label: "Curation Events",
+    aliases: ["curation", "curation events", "event", "events", "vending"],
   },
-  { key: "vending", label: "Vending", aliases: ["vending"] },
   { key: "removed", label: "Removed / Archive", aliases: ["removed", "archive", "outtake", "outtakes"] },
 ];
 
@@ -47,6 +48,16 @@ function toSlug(value) {
     .trim()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function stripNumericPrefix(value) {
+  return String(value || "")
+    .replace(/^\s*\d+\s*/, "")
+    .trim();
+}
+
+function normalizeSectionToken(value) {
+  return toSlug(stripNumericPrefix(value));
 }
 
 async function fetchResourcesByQuery(query) {
@@ -122,13 +133,13 @@ function buildSectionMap(resources) {
       ...(resource.public_id ? resource.public_id.split("/") : []),
       ...resource.tags,
     ]
-      .map(toSlug)
+      .map(normalizeSectionToken)
       .filter(Boolean);
 
     const matchedKeys = new Set();
 
     for (const definition of sectionDefinitions) {
-      const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(toSlug);
+      const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(normalizeSectionToken);
       if (folderParts.some((part) => aliases.includes(part))) {
         matchedKeys.add(definition.key);
       }
