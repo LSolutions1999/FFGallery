@@ -1,9 +1,0 @@
-{
-  "name": "faceted-frames-site",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "export:gallery": "node scripts/export-cloudinary-gallery.mjs",
-    "sync:gallery": "node scripts/export-cloudinary-gallery.mjs"
-  }
-}
