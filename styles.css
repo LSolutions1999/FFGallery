@@ -331,17 +331,17 @@ main {
   content: "";
   position: absolute;
   left: 50%;
-  top: 0.4rem;
-  width: clamp(16px, 1.8vw, 22px);
-  height: clamp(16px, 1.8vw, 22px);
+  top: 50%;
+  width: clamp(24px, 2.4vw, 34px);
+  height: clamp(24px, 2.4vw, 34px);
   background: url("assets/downchevron.png") center center / contain no-repeat;
   opacity: 0;
-  transform: translateX(-50%) translateY(-6px) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg);
   filter:
     drop-shadow(0 0 6px rgba(229, 197, 106, 0.65))
     drop-shadow(0 0 12px rgba(229, 197, 106, 0.25));
   pointer-events: none;
-  transition: opacity 180ms ease, transform 180ms ease;
+  transition: opacity 180ms ease, transform 180ms ease, filter 180ms ease;
 }
 
 .header-banner {
@@ -366,7 +366,11 @@ main {
 .header-logo-link:hover::after,
 .header-logo-link:focus-visible::after {
   opacity: 1;
-  transform: translateX(-50%) translateY(0) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg) scale(1.05);
+  filter:
+    blur(0.35px)
+    drop-shadow(0 0 8px rgba(229, 197, 106, 0.7))
+    drop-shadow(0 0 16px rgba(229, 197, 106, 0.28));
 }
 
 .header-overlay {
