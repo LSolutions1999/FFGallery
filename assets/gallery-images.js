@@ -15,6 +15,12 @@ window.gallerySections = [
         "tags": []
       },
       {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
+        "public_id": "IMG_4882_lqetkf",
+        "asset_folder": "facetedframes/1 Signature Pieces",
+        "tags": []
+      },
+      {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
         "public_id": "IMG_4884_szwk0c",
         "asset_folder": "facetedframes/1 Signature Pieces",
@@ -352,12 +358,6 @@ window.gallerySections = [
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
         "public_id": "IMG_0261_achvc6",
-        "asset_folder": "facetedframes/5 Lapidary Solutions",
-        "tags": []
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
-        "public_id": "IMG_4882_lqetkf",
         "asset_folder": "facetedframes/5 Lapidary Solutions",
         "tags": []
       },
