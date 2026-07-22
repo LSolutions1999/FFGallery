@@ -568,30 +568,47 @@
         });
       }
 
-      const rawGalleryData = Array.isArray(window.gallerySections)
-        ? window.gallerySections
-        : Array.isArray(window.galleryImages)
-          ? window.galleryImages
-          : fallbackGalleryImages;
-
-      const sections = Array.isArray(rawGalleryData) && rawGalleryData.length
-        ? (
-            typeof rawGalleryData[0] === "object" &&
-            !Array.isArray(rawGalleryData[0]) &&
-            ("items" in rawGalleryData[0] || "images" in rawGalleryData[0] || "assets" in rawGalleryData[0])
-              ? normalizeLegacyGallerySections(
-                  rawGalleryData.filter((section) => normalizeSectionToken(section.key || section.id || section.label || section.title || "") !== "removed"),
-                )
-              : buildSections(rawGalleryData)
-        )
-        : [];
-
-      if (!sections.length) {
-        for (const menu of sectionMenus) {
-          menu.panel.innerHTML = "";
+      async function loadGalleryData() {
+        try {
+          const response = await fetch("../assets/gallery-images.json", { cache: "no-store" });
+          if (response.ok) {
+            const data = await response.json();
+            if (Array.isArray(data) && data.length) {
+              return data;
+            }
+          }
+        } catch {
+          // Fall back to the generated JS payload or local fallback list.
         }
-        gallerySectionsRoot.innerHTML = "<p class=\"section-copy\">No gallery images found yet.</p>";
-      } else {
+
+        return Array.isArray(window.gallerySections)
+          ? window.gallerySections
+          : Array.isArray(window.galleryImages)
+            ? window.galleryImages
+            : fallbackGalleryImages;
+      }
+
+      loadGalleryData().then((rawGalleryData) => {
+        const sections = Array.isArray(rawGalleryData) && rawGalleryData.length
+          ? (
+              typeof rawGalleryData[0] === "object" &&
+              !Array.isArray(rawGalleryData[0]) &&
+              ("items" in rawGalleryData[0] || "images" in rawGalleryData[0] || "assets" in rawGalleryData[0])
+                ? normalizeLegacyGallerySections(
+                    rawGalleryData.filter((section) => normalizeSectionToken(section.key || section.id || section.label || section.title || "") !== "removed"),
+                  )
+                : buildSections(rawGalleryData)
+          )
+          : [];
+
+        if (!sections.length) {
+          for (const menu of sectionMenus) {
+            menu.panel.innerHTML = "";
+          }
+          gallerySectionsRoot.innerHTML = "<p class=\"section-copy\">No gallery images found yet.</p>";
+          return;
+        }
+
         const sectionLinksMarkup = sections
           .map((section, index) => {
             const targetId = `gallery-section-${toSlug(section.key) || index + 1}`;
@@ -643,7 +660,7 @@
             event.stopPropagation();
           });
         }
-      }
+      });
     </script>
   </body>
 </html>
