@@ -332,8 +332,8 @@ main {
   position: absolute;
   left: 50%;
   top: calc(50% + 0.45rem);
-  width: clamp(28px, 2.8vw, 40px);
-  height: clamp(28px, 2.8vw, 40px);
+  width: clamp(44px, 4.4vw, 64px);
+  height: clamp(44px, 4.4vw, 64px);
   background: url("assets/downchevron.png") center center / contain no-repeat;
   opacity: 0;
   transform: translate(-50%, -50%) rotate(180deg);
@@ -368,7 +368,7 @@ main {
   opacity: 1;
   transform: translate(-50%, -50%) rotate(180deg) scale(1.08);
   filter:
-    blur(0.35px)
+    blur(0.5px)
     drop-shadow(0 0 8px rgba(229, 197, 106, 0.7))
     drop-shadow(0 0 16px rgba(229, 197, 106, 0.28));
 }
@@ -398,6 +398,14 @@ main {
   display: none;
   align-items: center;
   gap: clamp(0.6rem, 1.6vw, 1.1rem);
+}
+
+.mobile-header-links--left {
+  justify-content: flex-start;
+}
+
+.mobile-header-links--right {
+  justify-content: flex-end;
 }
 
 .mobile-header-link {
@@ -716,6 +724,16 @@ main {
   box-shadow:
     inset 0 1px 0 rgba(229, 197, 106, 0.1),
     inset 0 -1px 0 rgba(229, 197, 106, 0.1);
+}
+
+body:not(.gallery-page) .contact-section {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 1px solid rgba(229, 197, 106, 0.45);
+  border-bottom: 1px solid rgba(229, 197, 106, 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(229, 197, 106, 0.12),
+    inset 0 -1px 0 rgba(229, 197, 106, 0.12);
 }
 
 .contact-section::before {
@@ -1046,6 +1064,11 @@ main {
     display: flex;
   }
 
+  .mobile-header-links--left,
+  .mobile-header-links--right {
+    display: flex;
+  }
+
   .gallery-page .desktop-subheader--gallery {
     display: flex;
     position: fixed;
@@ -1061,7 +1084,7 @@ main {
   }
 
   .desktop-socials--right {
-    display: flex;
+    display: none;
     gap: clamp(1.1rem, 2.9vw, 1.75rem);
   }
 
@@ -1097,6 +1120,10 @@ main {
   }
 
   .desktop-contact-link {
+    display: none;
+  }
+
+  .shop-link {
     display: none;
   }
 
