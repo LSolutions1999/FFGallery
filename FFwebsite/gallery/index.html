@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faceted Frames | Gallery</title>
+    <meta
+      name="description"
+      content="Official Faceted Frames Website Gallery"
+    />
+    <link rel="icon" type="image/jpeg" href="../assets/fflogo.jpg" />
+    <link rel="stylesheet" href="../styles.css?v=20260613" />
+  </head>
+  <body class="gallery-page">
+    <header class="site-header">
+      <a class="header-logo-link" href="#top" aria-label="Back to top">
+        <img class="header-banner" src="../assets/fftextlogo.PNG" alt="Faceted Frames logo" />
+      </a>
+      <div class="header-overlay">
+        <div class="topbar-left">
+          <a class="top-link desktop-contact-link" href="#bottom">
+            <img class="nav-image nav-image-contact" src="../assets/contacticongold.png" alt="Contact" />
+          </a>
+          <nav class="mobile-header-links" aria-label="Mobile contact and social links">
+            <a class="mobile-header-link mobile-header-link--contact" href="#bottom" aria-label="Contact">
+              <img src="../assets/contacticongold.png" alt="" />
+            </a>
+            <a class="mobile-header-link" href="https://www.youtube.com/@facetedframes" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src="../assets/youtubegold.png" alt="" />
+            </a>
+            <a class="mobile-header-link" href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <img src="../assets/FBgold.png" alt="" />
+            </a>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="desktop-socials desktop-socials--right" aria-label="Social links">
+            <a class="desktop-social-link" href="https://www.youtube.com/@facetedframes" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src="../assets/youtubegold.png" alt="" />
+            </a>
+            <a class="desktop-social-link" href="https://www.facebook.com/profile.php?id=61569752854311&ref=NONE_xav_ig_profile_page_web" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <img src="../assets/FBgold.png" alt="" />
+            </a>
+            <a class="desktop-social-link" href="https://www.instagram.com/facetedframes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src="../assets/instagramgold.png" alt="" />
+            </a>
+          </div>
+          <a class="top-link shop-link" href="../index.html">
+            <img class="nav-image nav-image-home" src="../assets/homeicongold.png" alt="Home" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav class="desktop-subheader desktop-subheader--gallery" aria-label="Gallery sections">
+      <div class="desktop-section-menu">
+        <button class="section-menu-toggle" type="button" aria-expanded="false" aria-controls="section-menu-panel">
+          <img src="../assets/downchevron.png" alt="" aria-hidden="true" />
+        </button>
+        <div class="section-menu-panel" id="section-menu-panel" hidden></div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero gallery-hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <img class="hero-title-image" src="../assets/ffgallerytext.png" alt="Gallery" />
+          </h1>
+          <p class="hero-subtitle">
+            A curated collection of unique pieces,
+            <br />
+            made to be explored up close.
+          </p>
+          <a class="hero-button" href="#gallery-collection">Browse the gallery</a>
+        </div>
+      </section>
+
+      <section id="gallery-collection" class="content-section section-frame gallery-section">
+        <div class="gallery-sections" aria-label="Gallery collection"></div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-shell">
+          <p class="eyebrow">Contact</p>
+          <div class="contact-actions">
+            <div class="contact-pair">
+              <div class="contact-item">
+                <p class="contact-item-title">Commissions, Inquires,<br />and Questions</p>
+                <a class="contact-email-button" href="mailto:facetedframes@gmail.com?subject=Commissions">
+                  General Correspondence
+                </a>
+              </div>
+              <div class="contact-item">
+                <p class="contact-item-title">Curating Exhibitions<br />and Events</p>
+                <a class="contact-email-button" href="mailto:facetedframesvending@gmail.com?subject=Vending">
+                  Curation Proposals
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="bottom" aria-hidden="true"></div>
+    </main>
+
+    <script src="../assets/gallery-images.js"></script>
+    <script>
+      const fallbackGalleryImages = [
+        "../assets/gallery/44FF735F-F3C6-4C63-B566-2F4CD2851653 2.jpg",
+        "../assets/gallery/44FF735F-F3C6-4C63-B566-2F4CD2851653.JPG",
+        "../assets/gallery/93620CA5-29B3-4A3D-9C8E-4E2740B20E28.jpg",
+        "../assets/gallery/featured.jpg",
+        "../assets/gallery/IMG_0078.jpeg",
+        "../assets/gallery/IMG_0080.jpeg",
+        "../assets/gallery/IMG_0081.jpeg",
+        "../assets/gallery/IMG_0258.jpg",
+        "../assets/gallery/IMG_0261.jpeg",
+        "../assets/gallery/IMG_0476.jpeg",
+        "../assets/gallery/IMG_0480.jpeg",
+        "../assets/gallery/IMG_0488.jpeg",
+        "../assets/gallery/IMG_0523.jpeg",
+        "../assets/gallery/IMG_0572.jpeg",
+        "../assets/gallery/IMG_0587.jpeg",
+        "../assets/gallery/IMG_0590.jpeg",
+        "../assets/gallery/IMG_0630.jpeg",
+        "../assets/gallery/IMG_0643.jpeg",
+        "../assets/gallery/IMG_0656.jpeg",
+        "../assets/gallery/IMG_0658.jpeg",
+        "../assets/gallery/IMG_0798.jpeg",
+        "../assets/gallery/IMG_0801.jpeg",
+        "../assets/gallery/IMG_0804.jpeg",
+        "../assets/gallery/IMG_0805.jpeg",
+        "../assets/gallery/IMG_0844.jpeg",
+        "../assets/gallery/IMG_0850.jpeg",
+        "../assets/gallery/IMG_0852.jpeg",
+        "../assets/gallery/IMG_0866.jpeg",
+        "../assets/gallery/IMG_0873.jpeg",
+        "../assets/gallery/IMG_0879.jpeg",
+        "../assets/gallery/IMG_0885.jpeg",
+        "../assets/gallery/IMG_1543.jpeg",
+        "../assets/gallery/IMG_1544.jpeg",
+        "../assets/gallery/IMG_1545.jpeg",
+        "../assets/gallery/IMG_1549.jpeg",
+        "../assets/gallery/IMG_1619.jpeg",
+        "../assets/gallery/IMG_1654.jpeg",
+        "../assets/gallery/IMG_1663.jpeg",
+        "../assets/gallery/IMG_1664.jpeg",
+        "../assets/gallery/IMG_1667.jpeg",
+        "../assets/gallery/IMG_1719.jpg",
+        "../assets/gallery/IMG_1948.jpeg",
+        "../assets/gallery/IMG_2015.jpeg",
+        "../assets/gallery/IMG_2205.jpeg",
+        "../assets/gallery/IMG_2208.jpeg",
+        "../assets/gallery/IMG_2210.jpeg",
+        "../assets/gallery/IMG_2214.jpeg",
+        "../assets/gallery/IMG_2220.jpeg",
+        "../assets/gallery/IMG_2226.jpeg",
+        "../assets/gallery/IMG_2234.jpeg",
+        "../assets/gallery/IMG_2257 2.jpeg",
+        "../assets/gallery/IMG_2257.jpeg",
+        "../assets/gallery/IMG_2326.jpeg",
+        "../assets/gallery/IMG_2374.jpeg",
+        "../assets/gallery/IMG_2378.jpeg",
+        "../assets/gallery/IMG_2382.jpeg",
+        "../assets/gallery/IMG_2383.jpeg",
+        "../assets/gallery/IMG_2385.jpeg",
+        "../assets/gallery/IMG_2575.jpeg",
+        "../assets/gallery/IMG_2637.jpeg",
+        "../assets/gallery/IMG_2666.jpeg",
+        "../assets/gallery/IMG_2691.jpeg",
+        "../assets/gallery/IMG_2786.jpeg",
+        "../assets/gallery/IMG_2799.jpeg",
+        "../assets/gallery/IMG_2825.jpg",
+        "../assets/gallery/IMG_3012.jpeg",
+        "../assets/gallery/IMG_3013.jpeg",
+        "../assets/gallery/IMG_3015.jpeg",
+        "../assets/gallery/IMG_3448.jpeg",
+        "../assets/gallery/IMG_3481.jpg",
+        "../assets/gallery/IMG_3486.jpg",
+        "../assets/gallery/IMG_3508.jpeg",
+        "../assets/gallery/IMG_3583.jpeg",
+        "../assets/gallery/IMG_3615.jpeg",
+        "../assets/gallery/IMG_3689.jpeg",
+        "../assets/gallery/IMG_4051.jpeg",
+        "../assets/gallery/IMG_4199.jpeg",
+        "../assets/gallery/IMG_4264.jpeg",
+        "../assets/gallery/IMG_4521.jpeg",
+        "../assets/gallery/IMG_4882.jpeg",
+        "../assets/gallery/IMG_4884.jpeg",
+        "../assets/gallery/IMG_4975.jpeg",
+        "../assets/gallery/IMG_4976.jpeg",
+        "../assets/gallery/IMG_4977.jpeg",
+        "../assets/gallery/IMG_5137.jpeg",
+        "../assets/gallery/IMG_5187.jpeg",
+        "../assets/gallery/IMG_6715.jpeg",
+        "../assets/gallery/IMG_7048.jpeg",
+        "../assets/gallery/IMG_7063.jpeg",
+        "../assets/gallery/IMG_7186.jpeg",
+        "../assets/gallery/IMG_7207.jpeg",
+        "../assets/gallery/IMG_7298.jpeg",
+        "../assets/gallery/IMG_7919.jpeg",
+        "../assets/gallery/IMG_7929.jpeg",
+        "../assets/gallery/IMG_7932.jpeg",
+        "../assets/gallery/IMG_7960.jpeg",
+        "../assets/gallery/IMG_7991.jpeg",
+        "../assets/gallery/IMG_8133.jpeg",
+        "../assets/gallery/IMG_8404.jpg",
+        "../assets/gallery/IMG_8406.jpg",
+        "../assets/gallery/IMG_8407.jpg",
+        "../assets/gallery/IMG_8408.jpg",
+        "../assets/gallery/IMG_8410.jpg",
+        "../assets/gallery/IMG_8411.jpg",
+        "../assets/gallery/IMG_8412.jpg",
+        "../assets/gallery/IMG_8413.jpg",
+        "../assets/gallery/IMG_8557.jpeg",
+        "../assets/gallery/IMG_8668.jpeg",
+        "../assets/gallery/IMG_8728.jpeg",
+        "../assets/gallery/IMG_9011.jpeg",
+        "../assets/gallery/IMG_9085.jpg",
+        "../assets/gallery/IMG_9562 2.jpeg",
+        "../assets/gallery/IMG_9814.jpeg",
+        "../assets/gallery/IMG_9816.jpeg",
+        "../assets/gallery/IMG_9965.jpeg",
+        "../assets/gallery/Photoroom_20250920_173235.JPG",
+        "../assets/gallery/Photoroom_20250921_122646.JPG",
+        "../assets/gallery/Photoroom_20251002_082120.jpg",
+        "../assets/gallery/Photoroom_20251031_173206.jpg",
+        "../assets/gallery/Photoroom_20251031_173357.JPG",
+        "../assets/gallery/Photoroom_20251205_104010.jpg"
+      ];
+
+      const gallerySectionsRoot = document.querySelector(".gallery-sections");
+      const sectionMenus = Array.from(document.querySelectorAll(".section-menu-toggle"))
+        .map((toggle) => {
+          const menuRoot = toggle.closest(".desktop-section-menu, .mobile-section-menu");
+          const panel = menuRoot ? menuRoot.querySelector(".section-menu-panel") : null;
+          return menuRoot && panel ? { root: menuRoot, toggle, panel, closeTimer: null } : null;
+        })
+        .filter(Boolean);
+      const sectionDefinitions = [
+        { key: "signature-pieces", label: "Signature Pieces", aliases: ["main", "signature", "signature pieces"] },
+        { key: "featured-designs", label: "Featured Designs", aliases: ["featured", "featured designs"] },
+        { key: "production-lines", label: "Production Lines", aliases: ["production", "production lines", "production-line", "line", "lines"] },
+        { key: "previous-commissions", label: "Previous Commissions", aliases: ["commission", "commissions", "previous commission", "previous commissions"] },
+        {
+          key: "lapidary-solutions",
+          label: "Lapidary Solutions",
+          aliases: ["lapidary", "lapidary-solutions", "lapidary solutions", "solutions"],
+        },
+        {
+          key: "curation-events",
+          label: "Curation Events",
+          aliases: ["curation", "curation events", "event", "events", "vending"],
+        },
+      ];
+
+      function toSlug(value) {
+        return String(value || "")
+          .toLowerCase()
+          .trim()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function stripNumericPrefix(value) {
+        return String(value || "")
+          .replace(/^\s*\d+\s*/, "")
+          .trim();
+      }
+
+      function normalizeSectionToken(value) {
+        return toSlug(stripNumericPrefix(value));
+      }
+
+      function humanize(value) {
+        const compact = String(value || "")
+          .replace(/[-_]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        if (!compact) {
+          return "Gallery";
+        }
+
+        return compact.replace(/(^|\s)\S/g, (character) => character.toUpperCase());
+      }
+
+      function extractCloudinaryInfo(source) {
+        try {
+          const url = new URL(source, document.baseURI);
+          const uploadIndex = url.pathname.indexOf("/upload/");
+
+          if (uploadIndex === -1) {
+            return null;
+          }
+
+          const parts = url.pathname
+            .slice(uploadIndex + "/upload/".length)
+            .split("/")
+            .filter(Boolean);
+
+          if (!parts.length) {
+            return null;
+          }
+
+          const versionIndex = parts[0] && /^v\d+$/.test(parts[0]) ? 1 : 0;
+          const resolvedParts = parts.slice(versionIndex);
+
+          if (!resolvedParts.length) {
+            return null;
+          }
+
+          return {
+            folder: resolvedParts.slice(0, -1).join("/"),
+            fileName: resolvedParts[resolvedParts.length - 1],
+          };
+        } catch {
+          return null;
+        }
+      }
+
+      function inferTagsFromName(fileName) {
+        const lowerName = String(fileName || "").toLowerCase();
+        const tags = [];
+
+        if (lowerName.includes("featured")) {
+          tags.push("featured");
+        }
+
+        if (lowerName.includes("pendant")) {
+          tags.push("pendants");
+        }
+
+        if (lowerName.includes("photoroom")) {
+          tags.push("studio");
+        }
+
+        return tags;
+      }
+
+      function normalizeAsset(source) {
+        if (typeof source === "string") {
+          const resolvedUrl = new URL(source, document.baseURI).href;
+          const cloudinaryInfo = extractCloudinaryInfo(resolvedUrl);
+          const fileName = cloudinaryInfo?.fileName || resolvedUrl.split("/").pop() || "";
+
+        return {
+          url: resolvedUrl,
+          folder: cloudinaryInfo?.folder || "",
+          tags: inferTagsFromName(fileName),
+          label: stripNumericPrefix(humanize(fileName.replace(/\.[^.]+$/, ""))),
+        };
+        }
+
+        if (!source || typeof source !== "object") {
+          return null;
+        }
+
+        const resolvedUrl = source.secure_url || source.url || source.src || "";
+        const safeUrl = resolvedUrl ? new URL(resolvedUrl, document.baseURI).href : "";
+        const cloudinaryInfo = extractCloudinaryInfo(safeUrl);
+        const folder = String(source.asset_folder || source.folder || cloudinaryInfo?.folder || "").trim();
+        const tags = Array.isArray(source.tags) ? source.tags : [];
+        const fileName = source.public_id?.split("/").pop() || cloudinaryInfo?.fileName || safeUrl.split("/").pop() || "";
+
+        return {
+          url: safeUrl,
+          folder,
+          tags: tags.map(toSlug).filter(Boolean),
+          label: stripNumericPrefix(source.title || humanize(fileName.replace(/\.[^.]+$/, ""))),
+        };
+      }
+
+      function sectionLabelFromKey(key) {
+        if (!key) {
+          return "Gallery";
+        }
+
+        const matchedDefinition = sectionDefinitions.find((definition) => definition.key === key);
+
+        if (matchedDefinition) {
+          return matchedDefinition.label;
+        }
+
+        const normalizedKey = stripNumericPrefix(key);
+        return normalizedKey.includes("/")
+          ? normalizedKey.split("/").map((part) => humanize(stripNumericPrefix(part))).join(" / ")
+          : humanize(normalizedKey);
+      }
+
+      function makeThumbnailSource(source) {
+        if (typeof source !== "string" || !source.includes("res.cloudinary.com")) {
+          return source;
+        }
+
+        return source.replace("/upload/", "/upload/f_auto,q_auto,w_700/");
+      }
+
+      function isFeaturedItem(item) {
+        const searchable = [
+          item?.label,
+          item?.title,
+          item?.name,
+          item?.public_id,
+          item?.folder,
+          item?.url,
+        ]
+          .map(normalizeSectionToken)
+          .join(" ");
+
+        return searchable.includes("featured");
+      }
+
+      function normalizeLegacyGallerySections(rawSections) {
+        const sections = new Map(sectionDefinitions.map((definition) => [
+          definition.key,
+          {
+            key: definition.key,
+            label: definition.label,
+            items: [],
+          },
+        ]));
+
+        for (const section of rawSections) {
+          const sectionKey = normalizeSectionToken(section.key || section.id || section.label || section.title || "");
+          const items = (section.items || section.images || section.assets || [])
+            .map(normalizeAsset)
+            .filter((item) => item && item.url);
+
+          if (sectionKey === "main") {
+            for (const item of items) {
+              const targetKey = isFeaturedItem(item) ? "featured-designs" : "signature-pieces";
+              sections.get(targetKey).items.push(item);
+            }
+            continue;
+          }
+
+          const remappedKey =
+            sectionKey === "commissions"
+              ? "previous-commissions"
+              : sectionKey === "vending"
+                ? "curation-events"
+                : sectionKey;
+
+          if (sections.has(remappedKey)) {
+            sections.get(remappedKey).items.push(...items);
+          }
+        }
+
+        return sectionDefinitions.map((definition) => sections.get(definition.key));
+      }
+
+      function buildSections(rawItems) {
+        const sections = new Map(sectionDefinitions.map((definition) => [
+          definition.key,
+          {
+            key: definition.key,
+            label: definition.label,
+            items: [],
+          },
+        ]));
+        const items = rawItems.map(normalizeAsset).filter((item) => item && item.url);
+
+        for (const item of items) {
+          const sectionKeys = new Set();
+          const searchableParts = [
+            item.folder,
+            ...String(item.folder || "").split("/"),
+            ...item.tags,
+          ]
+            .map(normalizeSectionToken)
+            .filter(Boolean);
+
+          for (const definition of sectionDefinitions) {
+            const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(normalizeSectionToken);
+            if (searchableParts.some((part) => aliases.includes(part))) {
+              sectionKeys.add(definition.key);
+            }
+          }
+
+          for (const sectionKey of sectionKeys) {
+            sections.get(sectionKey).items.push(item);
+          }
+        }
+
+        return sectionDefinitions.map((definition) => sections.get(definition.key));
+      }
+
+      function renderSection(section, index) {
+        const sectionId = `gallery-section-${toSlug(section.key) || index + 1}`;
+        const previewCount = section.items.length;
+
+        return `
+          <section class="gallery-section-block" id="${sectionId}">
+            <div class="gallery-section-header">
+              <div class="gallery-section-header-copy">
+                <h3>${section.label}</h3>
+                <span class="gallery-section-count">${previewCount} image${previewCount === 1 ? "" : "s"}</span>
+              </div>
+            </div>
+            <div class="gallery-grid">
+              ${section.items
+                .map((item) => {
+                  const thumbnailSource = makeThumbnailSource(item.url);
+                  return `
+                    <a class="gallery-card" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.label}">
+                      <img src="${thumbnailSource}" alt="${item.label}" loading="lazy" decoding="async" fetchpriority="low" />
+                    </a>
+                  `;
+                })
+                .join("")}
+            </div>
+          </section>
+        `;
+      }
+
+      function scrollToSection(sectionId, behavior = "smooth") {
+        const target = document.getElementById(sectionId);
+
+        if (!target) {
+          return;
+        }
+
+        const header = document.querySelector(".site-header");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior,
+        });
+      }
+
+      function closeSectionMenu() {
+        for (const menu of sectionMenus) {
+          if (menu.closeTimer) {
+            window.clearTimeout(menu.closeTimer);
+            menu.closeTimer = null;
+          }
+
+          menu.toggle.setAttribute("aria-expanded", "false");
+          menu.toggle.classList.remove("is-open");
+          menu.panel.classList.remove("is-open");
+          menu.panel.setAttribute("aria-hidden", "true");
+          menu.closeTimer = window.setTimeout(() => {
+            menu.panel.hidden = true;
+            menu.closeTimer = null;
+          }, 220);
+        }
+      }
+
+      function openSectionMenu(menu) {
+        if (!menu) {
+          return;
+        }
+
+        if (menu.closeTimer) {
+          window.clearTimeout(menu.closeTimer);
+          menu.closeTimer = null;
+        }
+
+        menu.panel.hidden = false;
+        menu.panel.setAttribute("aria-hidden", "false");
+        requestAnimationFrame(() => {
+          menu.panel.classList.add("is-open");
+          menu.toggle.classList.add("is-open");
+          menu.toggle.setAttribute("aria-expanded", "true");
+        });
+      }
+
+      async function loadGalleryData() {
+        try {
+          const response = await fetch("../assets/gallery-images.json", { cache: "no-store" });
+          if (response.ok) {
+            const data = await response.json();
+            if (Array.isArray(data) && data.length) {
+              return data;
+            }
+          }
+        } catch {
+          // Fall back to the generated JS payload or local fallback list.
+        }
+
+        return Array.isArray(window.gallerySections)
+          ? window.gallerySections
+          : Array.isArray(window.galleryImages)
+            ? window.galleryImages
+            : fallbackGalleryImages;
+      }
+
+      loadGalleryData().then((rawGalleryData) => {
+        const sections = Array.isArray(rawGalleryData) && rawGalleryData.length
+          ? (
+              typeof rawGalleryData[0] === "object" &&
+              !Array.isArray(rawGalleryData[0]) &&
+              ("items" in rawGalleryData[0] || "images" in rawGalleryData[0] || "assets" in rawGalleryData[0])
+                ? normalizeLegacyGallerySections(
+                    rawGalleryData.filter((section) => normalizeSectionToken(section.key || section.id || section.label || section.title || "") !== "removed"),
+                  )
+                : buildSections(rawGalleryData)
+          )
+          : [];
+
+        if (!sections.length) {
+          for (const menu of sectionMenus) {
+            menu.panel.innerHTML = "";
+          }
+          gallerySectionsRoot.innerHTML = "<p class=\"section-copy\">No gallery images found yet.</p>";
+          return;
+        }
+
+        const sectionLinksMarkup = sections
+          .map((section, index) => {
+            const targetId = `gallery-section-${toSlug(section.key) || index + 1}`;
+            const label = stripNumericPrefix(section.label);
+            return `<a class="section-pill" href="#${targetId}" data-target="${targetId}">${label}</a>`;
+          })
+          .join("");
+
+        for (const menu of sectionMenus) {
+          menu.panel.innerHTML = sectionLinksMarkup;
+        }
+
+        gallerySectionsRoot.innerHTML = sections.map(renderSection).join("");
+
+        document.querySelectorAll(".section-menu-panel .section-pill").forEach((pill) => {
+          pill.addEventListener("click", (event) => {
+            const targetId = pill.getAttribute("data-target");
+
+            if (!targetId) {
+              return;
+            }
+
+            event.preventDefault();
+            history.replaceState(null, "", `#${targetId}`);
+            closeSectionMenu();
+            scrollToSection(targetId);
+          });
+        });
+
+        if (location.hash) {
+          const targetId = location.hash.slice(1);
+          requestAnimationFrame(() => scrollToSection(targetId, "auto"));
+        }
+
+        for (const menu of sectionMenus) {
+          menu.toggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            const expanded = menu.toggle.getAttribute("aria-expanded") === "true";
+
+            if (expanded) {
+              closeSectionMenu();
+            } else {
+              openSectionMenu(menu);
+            }
+          });
+
+          menu.panel.addEventListener("click", (event) => {
+            event.stopPropagation();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
