@@ -266,6 +266,8 @@ img {
   padding: 1.25rem;
   border: 1px solid rgba(207, 165, 54, 0.12);
   background: rgba(0, 0, 0, 0.14);
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1200px;
 }
 
 .gallery-section-header {
