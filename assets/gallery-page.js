@@ -33,9 +33,12 @@ function renderSection(section, index) {
         ${section.items
           .map((item) => {
             const thumbnailSource = makeThumbnailSource(item.url);
+            const mediaMarkup = item.mediaType === "video"
+              ? `<video class="gallery-card-media" src="${thumbnailSource}" muted loop playsinline preload="metadata" aria-hidden="true"></video>`
+              : `<img class="gallery-card-media" src="${thumbnailSource}" alt="${item.label}" loading="lazy" decoding="async" fetchpriority="low" />`;
             return `
               <a class="gallery-card" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.label}">
-                <img src="${thumbnailSource}" alt="${item.label}" loading="lazy" decoding="async" fetchpriority="low" />
+                ${mediaMarkup}
               </a>
             `;
           })
@@ -181,6 +184,15 @@ loadGalleryData().then((rawGalleryData) => {
 
   wireSectionMenus(sections);
   gallerySectionsRoot.innerHTML = sections.map(renderSection).join("");
+
+  gallerySectionsRoot.querySelectorAll("video.gallery-card-media").forEach((video) => {
+    const card = video.closest(".gallery-card");
+    card?.addEventListener("mouseenter", () => video.play().catch(() => {}));
+    card?.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
 
   if (location.hash) {
     const targetId = location.hash.slice(1);

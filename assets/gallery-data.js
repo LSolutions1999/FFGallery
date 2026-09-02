@@ -148,6 +148,7 @@ export function normalizeAsset(source, index = 0) {
 
     return {
       url: resolvedUrl,
+      mediaType: /\.(mp4|webm|mov|m4v|ogg)(?:$|\?)/i.test(resolvedUrl) ? "video" : "image",
       folder: normalizeFolder(cloudinaryInfo?.folder || ""),
       tags: inferTagsFromName(fileName),
       label: normalizeItemName(fileName),
@@ -171,6 +172,7 @@ export function normalizeAsset(source, index = 0) {
 
   return {
     url: safeUrl,
+    mediaType: source.resource_type === "video" || /\.(mp4|webm|mov|m4v|ogg)(?:$|\?)/i.test(safeUrl) ? "video" : "image",
     folder,
     tags: tags.map(toSlug).filter(Boolean),
     label: normalizeItemName(explicitLabel, fileName),

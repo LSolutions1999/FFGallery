@@ -972,6 +972,13 @@ body:not(.gallery-page) .contact-section {
   display: block;
 }
 
+.gallery-card-media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 720px) {
   .gallery-section-block {
     padding: 1rem;
