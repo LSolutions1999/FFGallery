@@ -184,7 +184,8 @@ function getSectionSortLabel(section) {
   const folder = normalizeFolder(section.folder || "");
   const parts = splitPath(folder);
   const firstPart = parts[0] || section.label || section.key || "";
-  return stripNumericPrefix(firstPart || "");
+  // Keep the prefix here so numbered Cloudinary folders control display order.
+  return firstPart || "";
 }
 
 function compareItems(left, right) {
@@ -301,6 +302,17 @@ export function normalizeGalleryData(rawData) {
     !Array.isArray(firstItem) &&
     ("items" in firstItem || "images" in firstItem || "assets" in firstItem)
   ) {
+    const sectionItems = rawData.flatMap((section) =>
+      section && typeof section === "object"
+        ? section.items || section.images || section.assets || []
+        : [],
+    );
+
+    // Prefer each asset's Cloudinary folder over legacy hardcoded section names.
+    if (sectionItems.some((item) => item && typeof item === "object" && (item.asset_folder || item.folder))) {
+      return groupGalleryItems(sectionItems);
+    }
+
     return normalizeGallerySections(rawData);
   }
 
