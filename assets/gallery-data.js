@@ -12,7 +12,8 @@ export function toSlug(value) {
 
 export function stripNumericPrefix(value) {
   return String(value || "")
-    .replace(/^\s*\d+\s*/, "")
+    // Remove ordering prefixes such as "01_", "02 - ", or "3. ".
+    .replace(/^\s*\d+\s*(?:[-_.:)]+\s*)?/, "")
     .trim();
 }
 
