@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { groupGalleryItems, normalizeAsset } from "../assets/gallery-data.js";
 
 const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
 const apiKey = process.env.CLOUDINARY_API_KEY;
@@ -7,23 +8,6 @@ const apiSecret = process.env.CLOUDINARY_API_SECRET;
 const folder = process.env.CLOUDINARY_FOLDER || "facetedframes";
 const outputPath = process.env.OUTPUT_PATH || path.resolve("assets", "gallery-images.json");
 const jsOutputPath = process.env.OUTPUT_JS_PATH || path.resolve("assets", "gallery-images.js");
-const sectionDefinitions = [
-  { key: "signature-pieces", label: "Signature Pieces", aliases: ["main", "signature", "signature pieces"] },
-  { key: "featured-designs", label: "Featured Designs", aliases: ["featured", "featured designs"] },
-  { key: "production-lines", label: "Production Lines", aliases: ["production", "production lines", "production-line", "line", "lines"] },
-  { key: "previous-commissions", label: "Previous Commissions", aliases: ["commission", "commissions", "previous commission", "previous commissions"] },
-  {
-    key: "lapidary-solutions",
-    label: "Lapidary Solutions",
-    aliases: ["lapidary", "lapidary-solutions", "lapidary solutions", "solutions"],
-  },
-  {
-    key: "curation-events",
-    label: "Curation Events",
-    aliases: ["curation", "curation events", "event", "events", "vending"],
-  },
-  { key: "removed", label: "Removed / Archive", aliases: ["removed", "archive", "outtake", "outtakes"] },
-];
 
 if (!cloudName || !apiKey || !apiSecret) {
   throw new Error(
@@ -40,24 +24,6 @@ function normalizeTagList(tags) {
   }
 
   return [...new Set(tags.map((tag) => String(tag).trim()).filter(Boolean))];
-}
-
-function toSlug(value) {
-  return String(value || "")
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-function stripNumericPrefix(value) {
-  return String(value || "")
-    .replace(/^\s*\d+\s*/, "")
-    .trim();
-}
-
-function normalizeSectionToken(value) {
-  return toSlug(stripNumericPrefix(value));
 }
 
 async function fetchResourcesByQuery(query) {
@@ -122,56 +88,15 @@ async function fetchAllResources() {
   return [];
 }
 
-function buildSectionMap(resources) {
-  const sections = new Map(sectionDefinitions.map((definition) => [definition.key, { ...definition, items: [] }]));
-
-  for (const resource of resources) {
-    const folderParts = [
-      resource.asset_folder,
-      resource.public_id,
-      ...(resource.asset_folder ? resource.asset_folder.split("/") : []),
-      ...(resource.public_id ? resource.public_id.split("/") : []),
-      ...resource.tags,
-    ]
-      .map(normalizeSectionToken)
-      .filter(Boolean);
-
-    const matchedKeys = new Set();
-
-    for (const definition of sectionDefinitions) {
-      const aliases = [definition.key, definition.label, ...(definition.aliases || [])].map(normalizeSectionToken);
-      if (folderParts.some((part) => aliases.includes(part))) {
-        matchedKeys.add(definition.key);
-      }
-    }
-
-    if (!matchedKeys.size) {
-      matchedKeys.add("removed");
-    }
-
-    const normalizedItem = {
-      url: resource.url,
-      public_id: resource.public_id,
-      asset_folder: resource.asset_folder,
-      tags: resource.tags,
-    };
-
-    for (const key of matchedKeys) {
-      sections.get(key).items.push(normalizedItem);
-    }
-  }
-
-  return sectionDefinitions.map((definition) => sections.get(definition.key));
-}
-
 const resources = await fetchAllResources();
-const sections = buildSectionMap(resources);
+const normalizedResources = resources.map((resource, index) => normalizeAsset(resource, index)).filter((item) => item && item.url);
+const sections = groupGalleryItems(normalizedResources);
 const payload = `${JSON.stringify(sections, null, 2)}\n`;
 
 await fs.writeFile(outputPath, payload, "utf8");
 await fs.writeFile(
   jsOutputPath,
-  `window.gallerySections = ${JSON.stringify(sections, null, 2)};\nwindow.galleryImages = ${JSON.stringify(resources.map((resource) => resource.url), null, 2)};\n`,
+  `window.gallerySections = ${JSON.stringify(sections, null, 2)};\nwindow.galleryImages = ${JSON.stringify(normalizedResources.map((resource) => resource.url), null, 2)};\n`,
   "utf8",
 );
 console.log(`Wrote ${resources.length} image records to ${outputPath}`);
