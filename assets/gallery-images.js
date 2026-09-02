@@ -1,149 +1,116 @@
 window.gallerySections = [
   {
-    "key": "1-collaborations",
-    "label": "Collaborations",
+    "key": "1-signature-pieces",
+    "label": "Signature Pieces",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788377190/IMG_5463_rm7mwe.heic",
-        "folder": "1 Collaborations",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379169/IMG_6715_bdmgnh.heic",
+        "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_5463_rm7mwe",
-        "public_id": "IMG_5463_rm7mwe",
-        "version": 1788377190,
-        "index": 7
+        "label": "IMG_6715_bdmgnh",
+        "public_id": "IMG_6715_bdmgnh",
+        "version": 1788379169,
+        "index": 2
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788376753/NDEN5226_veaxhx.mp4",
-        "folder": "1 Collaborations",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379152/IMG_E0850_ppozjb.heic",
+        "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "NDEN5226_veaxhx",
-        "public_id": "NDEN5226_veaxhx",
-        "version": 1788376753,
-        "index": 10
+        "label": "IMG_E0850_ppozjb",
+        "public_id": "IMG_E0850_ppozjb",
+        "version": 1788379152,
+        "index": 3
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
-        "folder": "1 Collaborations",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378792/IMG_6372_thdjan.heic",
+        "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_9562_2_dm6ikk",
-        "public_id": "IMG_9562_2_dm6ikk",
-        "version": 1781233056,
-        "index": 46
+        "label": "IMG_6372_thdjan",
+        "public_id": "IMG_6372_thdjan",
+        "version": 1788378792,
+        "index": 4
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_0852_mrduiw",
+        "public_id": "IMG_0852_mrduiw",
+        "version": 1781233673,
+        "index": 44
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_4882_lqetkf",
+        "public_id": "IMG_4882_lqetkf",
+        "version": 1781232102,
+        "index": 49
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_4884_szwk0c",
+        "public_id": "IMG_4884_szwk0c",
+        "version": 1781232082,
+        "index": 50
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_4264_hf2n2x",
+        "public_id": "IMG_4264_hf2n2x",
+        "version": 1781231465,
+        "index": 52
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
+        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
+        "version": 1781231378,
+        "index": 54
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231325/Photoroom_20250920_173235_bqatc0.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "Photoroom_20250920_173235_bqatc0",
+        "public_id": "Photoroom_20250920_173235_bqatc0",
+        "version": 1781231325,
+        "index": 57
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_9085_jvlsmk",
+        "public_id": "IMG_9085_jvlsmk",
+        "version": 1781231300,
+        "index": 58
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_3481_t7rf3d",
+        "public_id": "IMG_3481_t7rf3d",
+        "version": 1781231077,
+        "index": 59
       }
     ]
   },
   {
-    "key": "2-curation-vending",
-    "label": "Curation + Vending",
-    "items": [
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788377066/IMG_4977_rkkdtu.heic",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_4977_rkkdtu",
-        "public_id": "IMG_4977_rkkdtu",
-        "version": 1788377066,
-        "index": 8
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363930/IMG_6815_-_Copy_wvz2rg.heic",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_6815_-_Copy_wvz2rg",
-        "public_id": "IMG_6815_-_Copy_wvz2rg",
-        "version": 1788363930,
-        "index": 33
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363624/IMG_5885_fx9yrf.heic",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_5885_fx9yrf",
-        "public_id": "IMG_5885_fx9yrf",
-        "version": 1788363624,
-        "index": 34
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363452/IMG_6806_-_Copy_lzbqnf.heic",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_6806_-_Copy_lzbqnf",
-        "public_id": "IMG_6806_-_Copy_lzbqnf",
-        "version": 1788363452,
-        "index": 35
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363357/IMG_6793_-_Copy_pihe6k.heic",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_6793_-_Copy_pihe6k",
-        "public_id": "IMG_6793_-_Copy_pihe6k",
-        "version": 1788363357,
-        "index": 36
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0454_k6hdt6.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "A0454_k6hdt6",
-        "public_id": "618A0454_k6hdt6",
-        "version": 1788363288,
-        "index": 37
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0459_kbrgzh.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "A0459_kbrgzh",
-        "public_id": "618A0459_kbrgzh",
-        "version": 1788363288,
-        "index": 38
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0462_kes7hk.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "A0462_kes7hk",
-        "public_id": "618A0462_kes7hk",
-        "version": 1788363288,
-        "index": 39
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232206/IMG_4976_xyuw5b.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_4976_xyuw5b",
-        "public_id": "IMG_4976_xyuw5b",
-        "version": 1781232206,
-        "index": 48
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229794/IMG_4521_k7mmjh.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_4521_k7mmjh",
-        "public_id": "IMG_4521_k7mmjh",
-        "version": 1781229794,
-        "index": 62
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229454/IMG_4975_nkcfea.jpg",
-        "folder": "2 Curation + Vending",
-        "tags": [],
-        "label": "IMG_4975_nkcfea",
-        "public_id": "IMG_4975_nkcfea",
-        "version": 1781229454,
-        "index": 63
-      }
-    ]
-  },
-  {
-    "key": "6-featured-designs",
+    "key": "2-featured-designs",
     "label": "Featured Designs",
     "items": [
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379345/IMG_2383_cb0s6e.heic",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "IMG_2383_cb0s6e",
         "public_id": "IMG_2383_cb0s6e",
@@ -152,7 +119,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378765/IMG_E6663_z5lgdf.heic",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "IMG_E6663_z5lgdf",
         "public_id": "IMG_E6663_z5lgdf",
@@ -161,7 +128,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378596/IMG_3015_j3aufv.heic",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "IMG_3015_j3aufv",
         "public_id": "IMG_3015_j3aufv",
@@ -170,7 +137,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788376789/AARB0497_ho7mcl.jpg",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "AARB0497_ho7mcl",
         "public_id": "AARB0497_ho7mcl",
@@ -179,7 +146,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231402/IMG_0258_zvt9jl.jpg",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "IMG_0258_zvt9jl",
         "public_id": "IMG_0258_zvt9jl",
@@ -188,7 +155,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231346/Photoroom_20251031_173357_vthyjc.jpg",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "Photoroom_20251031_173357_vthyjc",
         "public_id": "Photoroom_20251031_173357_vthyjc",
@@ -197,7 +164,7 @@ window.gallerySections = [
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231342/Photoroom_20250921_122646_m5gkei.jpg",
-        "folder": "6 Featured Designs",
+        "folder": "2 Featured Designs",
         "tags": [],
         "label": "Photoroom_20250921_122646_m5gkei",
         "public_id": "Photoroom_20250921_122646_m5gkei",
@@ -207,71 +174,107 @@ window.gallerySections = [
     ]
   },
   {
-    "key": "3-lapidary-solutions",
-    "label": "Lapidary Solutions",
+    "key": "3-production-lines",
+    "label": "Production Lines",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364776/IMG_E6184_izfqdf.mov",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379423/IMG_4919_n8hhw0.heic",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_E6184_izfqdf",
-        "public_id": "IMG_E6184_izfqdf",
-        "version": 1788364776,
-        "index": 28
+        "label": "IMG_4919_n8hhw0",
+        "public_id": "IMG_4919_n8hhw0",
+        "version": 1788379423,
+        "index": 0
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364774/IMG_E6190_ywrdto.jpg",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788367606/IMG_6375_zruchv.heic",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_E6190_ywrdto",
-        "public_id": "IMG_E6190_ywrdto",
-        "version": 1788364774,
-        "index": 29
+        "label": "IMG_6375_zruchv",
+        "public_id": "IMG_6375_zruchv",
+        "version": 1788367606,
+        "index": 11
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364772/IMG_E6208_gosniw.jpg",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788367595/IMG_5794_x6ifvy.heic",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_E6208_gosniw",
-        "public_id": "IMG_E6208_gosniw",
-        "version": 1788364772,
-        "index": 30
+        "label": "IMG_5794_x6ifvy",
+        "public_id": "IMG_5794_x6ifvy",
+        "version": 1788367595,
+        "index": 12
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364765/IMG_5636_gbhjwk.mov",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233937/IMG_2214_pwckkb.jpg",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_5636_gbhjwk",
-        "public_id": "IMG_5636_gbhjwk",
-        "version": 1788364765,
-        "index": 31
+        "label": "IMG_2214_pwckkb",
+        "public_id": "IMG_2214_pwckkb",
+        "version": 1781233937,
+        "index": 40
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364723/IMG_1795_b9b9iq.jpg",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233887/IMG_0805_lsemfp.jpg",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_1795_b9b9iq",
-        "public_id": "IMG_1795_b9b9iq",
-        "version": 1788364723,
-        "index": 32
+        "label": "IMG_0805_lsemfp",
+        "public_id": "IMG_0805_lsemfp",
+        "version": 1781233887,
+        "index": 41
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233865/IMG_2210_gbshza.jpg",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_0261_achvc6",
-        "public_id": "IMG_0261_achvc6",
-        "version": 1781232816,
-        "index": 47
+        "label": "IMG_2210_gbshza",
+        "public_id": "IMG_2210_gbshza",
+        "version": 1781233865,
+        "index": 42
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231747/IMG_2015_fkosoi.jpg",
-        "folder": "3 Lapidary Solutions",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233702/IMG_0801_obl4wc.jpg",
+        "folder": "3 Production Lines",
         "tags": [],
-        "label": "IMG_2015_fkosoi",
-        "public_id": "IMG_2015_fkosoi",
-        "version": 1781231747,
-        "index": 51
+        "label": "IMG_0801_obl4wc",
+        "public_id": "IMG_0801_obl4wc",
+        "version": 1781233702,
+        "index": 43
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233334/IMG_8133_zcl5cu.jpg",
+        "folder": "3 Production Lines",
+        "tags": [],
+        "label": "IMG_8133_zcl5cu",
+        "public_id": "IMG_8133_zcl5cu",
+        "version": 1781233334,
+        "index": 45
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230893/IMG_2208_uvlo89.jpg",
+        "folder": "3 Production Lines",
+        "tags": [],
+        "label": "IMG_2208_uvlo89",
+        "public_id": "IMG_2208_uvlo89",
+        "version": 1781230893,
+        "index": 60
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228887/IMG_0885_ijwqsn.jpg",
+        "folder": "3 Production Lines",
+        "tags": [],
+        "label": "IMG_0885_ijwqsn",
+        "public_id": "IMG_0885_ijwqsn",
+        "version": 1781228887,
+        "index": 64
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228617/IMG_2257_2_awkhcr.jpg",
+        "folder": "3 Production Lines",
+        "tags": [],
+        "label": "IMG_2257_2_awkhcr",
+        "public_id": "IMG_2257_2_awkhcr",
+        "version": 1781228617,
+        "index": 66
       }
     ]
   },
@@ -435,212 +438,209 @@ window.gallerySections = [
     ]
   },
   {
-    "key": "5-production-lines",
-    "label": "Production Lines",
+    "key": "5-lapidary-solutions",
+    "label": "Lapidary Solutions",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379423/IMG_4919_n8hhw0.heic",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364776/IMG_E6184_izfqdf.mov",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_4919_n8hhw0",
-        "public_id": "IMG_4919_n8hhw0",
-        "version": 1788379423,
-        "index": 0
+        "label": "IMG_E6184_izfqdf",
+        "public_id": "IMG_E6184_izfqdf",
+        "version": 1788364776,
+        "index": 28
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788367606/IMG_6375_zruchv.heic",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364774/IMG_E6190_ywrdto.jpg",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_6375_zruchv",
-        "public_id": "IMG_6375_zruchv",
-        "version": 1788367606,
-        "index": 11
+        "label": "IMG_E6190_ywrdto",
+        "public_id": "IMG_E6190_ywrdto",
+        "version": 1788364774,
+        "index": 29
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788367595/IMG_5794_x6ifvy.heic",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364772/IMG_E6208_gosniw.jpg",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_5794_x6ifvy",
-        "public_id": "IMG_5794_x6ifvy",
-        "version": 1788367595,
-        "index": 12
+        "label": "IMG_E6208_gosniw",
+        "public_id": "IMG_E6208_gosniw",
+        "version": 1788364772,
+        "index": 30
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233937/IMG_2214_pwckkb.jpg",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364765/IMG_5636_gbhjwk.mov",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_2214_pwckkb",
-        "public_id": "IMG_2214_pwckkb",
-        "version": 1781233937,
-        "index": 40
+        "label": "IMG_5636_gbhjwk",
+        "public_id": "IMG_5636_gbhjwk",
+        "version": 1788364765,
+        "index": 31
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233887/IMG_0805_lsemfp.jpg",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364723/IMG_1795_b9b9iq.jpg",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_0805_lsemfp",
-        "public_id": "IMG_0805_lsemfp",
-        "version": 1781233887,
-        "index": 41
+        "label": "IMG_1795_b9b9iq",
+        "public_id": "IMG_1795_b9b9iq",
+        "version": 1788364723,
+        "index": 32
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233865/IMG_2210_gbshza.jpg",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_2210_gbshza",
-        "public_id": "IMG_2210_gbshza",
-        "version": 1781233865,
-        "index": 42
+        "label": "IMG_0261_achvc6",
+        "public_id": "IMG_0261_achvc6",
+        "version": 1781232816,
+        "index": 47
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233702/IMG_0801_obl4wc.jpg",
-        "folder": "5 Production Lines",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231747/IMG_2015_fkosoi.jpg",
+        "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_0801_obl4wc",
-        "public_id": "IMG_0801_obl4wc",
-        "version": 1781233702,
-        "index": 43
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233334/IMG_8133_zcl5cu.jpg",
-        "folder": "5 Production Lines",
-        "tags": [],
-        "label": "IMG_8133_zcl5cu",
-        "public_id": "IMG_8133_zcl5cu",
-        "version": 1781233334,
-        "index": 45
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781230893/IMG_2208_uvlo89.jpg",
-        "folder": "5 Production Lines",
-        "tags": [],
-        "label": "IMG_2208_uvlo89",
-        "public_id": "IMG_2208_uvlo89",
-        "version": 1781230893,
-        "index": 60
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228887/IMG_0885_ijwqsn.jpg",
-        "folder": "5 Production Lines",
-        "tags": [],
-        "label": "IMG_0885_ijwqsn",
-        "public_id": "IMG_0885_ijwqsn",
-        "version": 1781228887,
-        "index": 64
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781228617/IMG_2257_2_awkhcr.jpg",
-        "folder": "5 Production Lines",
-        "tags": [],
-        "label": "IMG_2257_2_awkhcr",
-        "public_id": "IMG_2257_2_awkhcr",
-        "version": 1781228617,
-        "index": 66
+        "label": "IMG_2015_fkosoi",
+        "public_id": "IMG_2015_fkosoi",
+        "version": 1781231747,
+        "index": 51
       }
     ]
   },
   {
-    "key": "7-signature-pieces",
-    "label": "Signature Pieces",
+    "key": "6-curation-vending",
+    "label": "Curation + Vending",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379169/IMG_6715_bdmgnh.heic",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788377066/IMG_4977_rkkdtu.heic",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_6715_bdmgnh",
-        "public_id": "IMG_6715_bdmgnh",
-        "version": 1788379169,
-        "index": 2
+        "label": "IMG_4977_rkkdtu",
+        "public_id": "IMG_4977_rkkdtu",
+        "version": 1788377066,
+        "index": 8
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379152/IMG_E0850_ppozjb.heic",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363930/IMG_6815_-_Copy_wvz2rg.heic",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_E0850_ppozjb",
-        "public_id": "IMG_E0850_ppozjb",
-        "version": 1788379152,
-        "index": 3
+        "label": "IMG_6815_-_Copy_wvz2rg",
+        "public_id": "IMG_6815_-_Copy_wvz2rg",
+        "version": 1788363930,
+        "index": 33
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378792/IMG_6372_thdjan.heic",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363624/IMG_5885_fx9yrf.heic",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_6372_thdjan",
-        "public_id": "IMG_6372_thdjan",
-        "version": 1788378792,
-        "index": 4
+        "label": "IMG_5885_fx9yrf",
+        "public_id": "IMG_5885_fx9yrf",
+        "version": 1788363624,
+        "index": 34
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363452/IMG_6806_-_Copy_lzbqnf.heic",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_0852_mrduiw",
-        "public_id": "IMG_0852_mrduiw",
-        "version": 1781233673,
-        "index": 44
+        "label": "IMG_6806_-_Copy_lzbqnf",
+        "public_id": "IMG_6806_-_Copy_lzbqnf",
+        "version": 1788363452,
+        "index": 35
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363357/IMG_6793_-_Copy_pihe6k.heic",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_4882_lqetkf",
-        "public_id": "IMG_4882_lqetkf",
-        "version": 1781232102,
-        "index": 49
+        "label": "IMG_6793_-_Copy_pihe6k",
+        "public_id": "IMG_6793_-_Copy_pihe6k",
+        "version": 1788363357,
+        "index": 36
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0454_k6hdt6.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_4884_szwk0c",
-        "public_id": "IMG_4884_szwk0c",
-        "version": 1781232082,
-        "index": 50
+        "label": "A0454_k6hdt6",
+        "public_id": "618A0454_k6hdt6",
+        "version": 1788363288,
+        "index": 37
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0459_kbrgzh.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_4264_hf2n2x",
-        "public_id": "IMG_4264_hf2n2x",
-        "version": 1781231465,
-        "index": 52
+        "label": "A0459_kbrgzh",
+        "public_id": "618A0459_kbrgzh",
+        "version": 1788363288,
+        "index": 38
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788363288/618A0462_kes7hk.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
-        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
-        "version": 1781231378,
-        "index": 54
+        "label": "A0462_kes7hk",
+        "public_id": "618A0462_kes7hk",
+        "version": 1788363288,
+        "index": 39
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231325/Photoroom_20250920_173235_bqatc0.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232206/IMG_4976_xyuw5b.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "Photoroom_20250920_173235_bqatc0",
-        "public_id": "Photoroom_20250920_173235_bqatc0",
-        "version": 1781231325,
-        "index": 57
+        "label": "IMG_4976_xyuw5b",
+        "public_id": "IMG_4976_xyuw5b",
+        "version": 1781232206,
+        "index": 48
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229794/IMG_4521_k7mmjh.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_9085_jvlsmk",
-        "public_id": "IMG_9085_jvlsmk",
-        "version": 1781231300,
-        "index": 58
+        "label": "IMG_4521_k7mmjh",
+        "public_id": "IMG_4521_k7mmjh",
+        "version": 1781229794,
+        "index": 62
       },
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
-        "folder": "7 Signature Pieces",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781229454/IMG_4975_nkcfea.jpg",
+        "folder": "6 Curation + Vending",
         "tags": [],
-        "label": "IMG_3481_t7rf3d",
-        "public_id": "IMG_3481_t7rf3d",
-        "version": 1781231077,
-        "index": 59
+        "label": "IMG_4975_nkcfea",
+        "public_id": "IMG_4975_nkcfea",
+        "version": 1781229454,
+        "index": 63
+      }
+    ]
+  },
+  {
+    "key": "7-collaborations",
+    "label": "Collaborations",
+    "items": [
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788377190/IMG_5463_rm7mwe.heic",
+        "folder": "7 Collaborations",
+        "tags": [],
+        "label": "IMG_5463_rm7mwe",
+        "public_id": "IMG_5463_rm7mwe",
+        "version": 1788377190,
+        "index": 7
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788376753/NDEN5226_veaxhx.mp4",
+        "folder": "7 Collaborations",
+        "tags": [],
+        "label": "NDEN5226_veaxhx",
+        "public_id": "NDEN5226_veaxhx",
+        "version": 1788376753,
+        "index": 10
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
+        "folder": "7 Collaborations",
+        "tags": [],
+        "label": "IMG_9562_2_dm6ikk",
+        "public_id": "IMG_9562_2_dm6ikk",
+        "version": 1781233056,
+        "index": 46
       }
     ]
   }
