@@ -4,114 +4,114 @@ window.gallerySections = [
     "label": "Signature Pieces",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379152/IMG_E0850_ppozjb.heic",
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
-        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
-        "version": 1781231378,
-        "index": 54
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_0852_mrduiw",
-        "public_id": "IMG_0852_mrduiw",
-        "version": 1781233673,
-        "index": 44
+        "label": "IMG_SP_01",
+        "public_id": "IMG_E0850_ppozjb",
+        "version": 1788379152,
+        "index": 3
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231077/IMG_3481_t7rf3d.jpg",
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_3481_t7rf3d",
+        "label": "IMG_SP_02",
         "public_id": "IMG_3481_t7rf3d",
         "version": 1781231077,
         "index": 59
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_4264_hf2n2x",
-        "public_id": "IMG_4264_hf2n2x",
-        "version": 1781231465,
-        "index": 52
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_4882_lqetkf",
-        "public_id": "IMG_4882_lqetkf",
-        "version": 1781232102,
-        "index": 49
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_4884_szwk0c",
-        "public_id": "IMG_4884_szwk0c",
-        "version": 1781232082,
-        "index": 50
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378792/IMG_6372_thdjan.heic",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_6372_thdjan",
-        "public_id": "IMG_6372_thdjan",
-        "version": 1788378792,
-        "index": 4
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379169/IMG_6715_bdmgnh.heic",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_6715_bdmgnh",
-        "public_id": "IMG_6715_bdmgnh",
-        "version": 1788379169,
-        "index": 2
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231300/IMG_9085_jvlsmk.jpg",
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_9085_jvlsmk",
+        "label": "IMG_SP_03",
         "public_id": "IMG_9085_jvlsmk",
         "version": 1781231300,
         "index": 58
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379152/IMG_E0850_ppozjb.heic",
-        "mediaType": "image",
-        "folder": "1 Signature Pieces",
-        "tags": [],
-        "label": "IMG_E0850_ppozjb",
-        "public_id": "IMG_E0850_ppozjb",
-        "version": 1788379152,
-        "index": 3
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231325/Photoroom_20250920_173235_bqatc0.jpg",
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "Photoroom_20250920_173235_bqatc0",
+        "label": "IMG_SP_04",
         "public_id": "Photoroom_20250920_173235_bqatc0",
         "version": 1781231325,
         "index": 57
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231378/93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f.jpg",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_05",
+        "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
+        "version": 1781231378,
+        "index": 54
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231465/IMG_4264_hf2n2x.jpg",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_06",
+        "public_id": "IMG_4264_hf2n2x",
+        "version": 1781231465,
+        "index": 52
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233673/IMG_0852_mrduiw.jpg",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_07",
+        "public_id": "IMG_0852_mrduiw",
+        "version": 1781233673,
+        "index": 44
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788379169/IMG_6715_bdmgnh.heic",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_08",
+        "public_id": "IMG_6715_bdmgnh",
+        "version": 1788379169,
+        "index": 2
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788378792/IMG_6372_thdjan.heic",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_09",
+        "public_id": "IMG_6372_thdjan",
+        "version": 1788378792,
+        "index": 4
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232082/IMG_4884_szwk0c.jpg",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_10",
+        "public_id": "IMG_4884_szwk0c",
+        "version": 1781232082,
+        "index": 50
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232102/IMG_4882_lqetkf.jpg",
+        "mediaType": "image",
+        "folder": "1 Signature Pieces",
+        "tags": [],
+        "label": "IMG_SP_11",
+        "public_id": "IMG_4882_lqetkf",
+        "version": 1781232102,
+        "index": 49
       }
     ]
   },
