@@ -168,7 +168,7 @@ export function normalizeAsset(source, index = 0) {
   const folder = normalizeFolder(source.asset_folder || source.folder || cloudinaryInfo?.folder || "");
   const tags = Array.isArray(source.tags) ? source.tags : [];
   const fileName = source.public_id?.split("/").pop() || cloudinaryInfo?.fileName || safeUrl.split("/").pop() || "";
-  const explicitLabel = source.title || source.label || source.name || "";
+  const explicitLabel = source.display_name || source.title || source.label || source.name || "";
 
   return {
     url: safeUrl,

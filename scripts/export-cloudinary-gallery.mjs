@@ -56,6 +56,7 @@ async function fetchResourcesByQuery(query) {
         resources.push({
           url: resource.secure_url,
           public_id: resource.public_id || "",
+          display_name: resource.display_name || "",
           resource_type: resource.resource_type || "image",
           asset_folder: resource.asset_folder || "",
           tags: normalizeTagList(resource.tags),
