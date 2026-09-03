@@ -191,19 +191,19 @@ function getSectionSortLabel(section) {
 }
 
 function compareItems(left, right) {
+  const leftVersion = Number.isFinite(left.version) ? left.version : Number.POSITIVE_INFINITY;
+  const rightVersion = Number.isFinite(right.version) ? right.version : Number.POSITIVE_INFINITY;
+
+  if (leftVersion !== rightVersion) {
+    return rightVersion - leftVersion;
+  }
+
   const leftLabel = left.label || left.public_id || left.url;
   const rightLabel = right.label || right.public_id || right.url;
 
   const labelComparison = compareText(leftLabel, rightLabel);
   if (labelComparison !== 0) {
     return labelComparison;
-  }
-
-  const leftVersion = Number.isFinite(left.version) ? left.version : Number.POSITIVE_INFINITY;
-  const rightVersion = Number.isFinite(right.version) ? right.version : Number.POSITIVE_INFINITY;
-
-  if (leftVersion !== rightVersion) {
-    return rightVersion - leftVersion;
   }
 
   return left.index - right.index;
