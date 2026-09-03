@@ -718,6 +718,10 @@ main {
   width: min(340px, calc(100vw - 2rem));
 }
 
+.hero-category-menu.is-floating.is-side-menu-open .hero-category-panel:not(.is-open) {
+  transform: translateX(-100%);
+}
+
 .hero-category-menu.is-floating.is-side-menu-open .hero-category-panel {
   top: var(--header-h);
   right: auto;

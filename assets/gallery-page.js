@@ -81,12 +81,12 @@ function scrollToSection(sectionId, behavior = "smooth") {
 
 function closeSectionMenu() {
   if (heroToggle && heroPanel) {
-    heroMenuRoot?.classList.remove("is-side-menu-open");
     heroToggle.setAttribute("aria-expanded", "false");
     heroToggle.classList.remove("is-open");
     heroPanel.classList.remove("is-open");
     window.setTimeout(() => {
       if (heroToggle.getAttribute("aria-expanded") !== "true") {
+        heroMenuRoot?.classList.remove("is-side-menu-open");
         heroPanel.hidden = true;
       }
     }, 220);
