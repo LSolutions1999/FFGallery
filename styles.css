@@ -534,6 +534,19 @@ main {
   padding: 1.2rem 0 1.9rem;
 }
 
+.gallery-hero {
+  overflow: visible;
+}
+
+.gallery-hero::before,
+.gallery-hero::after {
+  clip-path: inset(0);
+}
+
+.gallery-hero .hero-category-panel {
+  z-index: 80;
+}
+
 .gallery-hero .hero-subtitle {
   margin-top: 1.2rem;
 }
@@ -660,7 +673,7 @@ main {
   width: 2.6rem;
   height: 2.6rem;
   margin: 0;
-  pointer-events: none;
+  pointer-events: auto;
   transform: rotate(180deg) scale(1.05);
   filter:
     drop-shadow(0 0 7px rgba(229, 197, 106, 0.7))
@@ -673,6 +686,14 @@ main {
   top: calc(100% + 0.65rem);
   width: 100%;
   text-align: left;
+}
+
+.hero-category-menu.is-floating .hero-category-panel {
+  position: fixed;
+  top: calc(var(--header-h) + 3.5rem);
+  right: 1rem;
+  left: auto;
+  width: min(340px, calc(100vw - 2rem));
 }
 
 .hero-button:hover,

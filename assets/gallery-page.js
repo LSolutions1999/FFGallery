@@ -256,6 +256,7 @@ function wireHeroCategoryMenu(sections) {
 
     if (shouldFloat) {
       const start = heroChevron.getBoundingClientRect();
+      heroMenuRoot.classList.add("is-floating");
       heroChevron.classList.add("is-floating");
       heroChevron.style.left = `${start.left}px`;
       heroChevron.style.top = `${start.top}px`;
@@ -266,6 +267,7 @@ function wireHeroCategoryMenu(sections) {
       return;
     }
 
+    heroMenuRoot.classList.remove("is-floating");
     heroChevron.classList.remove("is-floating");
     restoreTimer = window.setTimeout(() => {
       heroChevron.style.left = "";
