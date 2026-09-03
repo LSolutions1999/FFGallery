@@ -191,11 +191,12 @@ function getSectionSortLabel(section) {
 }
 
 function compareItems(left, right) {
-  const leftOrder = parseLeadingNumber(left.label || left.public_id || left.url);
-  const rightOrder = parseLeadingNumber(right.label || right.public_id || right.url);
+  const leftLabel = left.label || left.public_id || left.url;
+  const rightLabel = right.label || right.public_id || right.url;
 
-  if (leftOrder !== rightOrder) {
-    return leftOrder - rightOrder;
+  const labelComparison = compareText(leftLabel, rightLabel);
+  if (labelComparison !== 0) {
+    return labelComparison;
   }
 
   const leftVersion = Number.isFinite(left.version) ? left.version : Number.POSITIVE_INFINITY;
@@ -203,14 +204,6 @@ function compareItems(left, right) {
 
   if (leftVersion !== rightVersion) {
     return rightVersion - leftVersion;
-  }
-
-  const leftLabel = left.label || left.public_id || left.url;
-  const rightLabel = right.label || right.public_id || right.url;
-
-  const labelComparison = compareText(leftLabel, rightLabel);
-  if (labelComparison !== 0) {
-    return labelComparison;
   }
 
   return left.index - right.index;
