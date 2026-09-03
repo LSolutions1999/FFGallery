@@ -17,6 +17,14 @@ function makeThumbnailSource(source) {
   return source.replace("/upload/", "/upload/f_auto,q_auto,w_500/");
 }
 
+function makeDisplaySource(source) {
+  if (typeof source !== "string" || !source.includes("res.cloudinary.com")) {
+    return source;
+  }
+
+  return source.replace("/upload/", "/upload/f_auto,q_auto/");
+}
+
 function renderSection(section, index) {
   const sectionId = `gallery-section-${toSlug(section.key) || index + 1}`;
   const previewCount = section.items.length;
@@ -33,11 +41,12 @@ function renderSection(section, index) {
         ${section.items
           .map((item) => {
             const thumbnailSource = makeThumbnailSource(item.url);
+            const displaySource = item.mediaType === "video" ? item.url : makeDisplaySource(item.url);
             const mediaMarkup = item.mediaType === "video"
               ? `<video class="gallery-card-media" src="${thumbnailSource}" muted loop playsinline preload="metadata" aria-hidden="true"></video>`
               : `<img class="gallery-card-media" src="${thumbnailSource}" alt="${item.label}" loading="lazy" decoding="async" fetchpriority="low" />`;
             return `
-              <a class="gallery-card" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.label}">
+              <a class="gallery-card" href="${displaySource}" target="_blank" rel="noreferrer" aria-label="${item.label}">
                 ${mediaMarkup}
               </a>
             `;
