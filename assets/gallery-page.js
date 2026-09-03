@@ -5,6 +5,7 @@ const heroMenuRoot = document.querySelector(".hero-category-menu");
 const heroToggle = document.querySelector(".hero-category-toggle");
 const heroPanel = document.querySelector(".hero-category-panel");
 const heroChevron = document.querySelector(".hero-category-chevron");
+const heroDirection = document.querySelector(".hero-category-direction");
 const sectionMenus = Array.from(document.querySelectorAll(".section-menu-toggle"))
   .map((toggle) => {
     const menuRoot = toggle.closest(".desktop-section-menu, .mobile-section-menu");
@@ -80,6 +81,7 @@ function scrollToSection(sectionId, behavior = "smooth") {
 
 function closeSectionMenu() {
   if (heroToggle && heroPanel) {
+    heroMenuRoot?.classList.remove("is-side-menu-open");
     heroToggle.setAttribute("aria-expanded", "false");
     heroToggle.classList.remove("is-open");
     heroPanel.classList.remove("is-open");
@@ -216,6 +218,9 @@ function wireHeroCategoryMenu(sections) {
       return;
     }
 
+    if (heroMenuRoot.classList.contains("is-floating")) {
+      heroMenuRoot.classList.add("is-side-menu-open");
+    }
     heroPanel.hidden = false;
     heroToggle.setAttribute("aria-expanded", "true");
     heroToggle.classList.add("is-open");
@@ -260,18 +265,33 @@ function wireHeroCategoryMenu(sections) {
       heroChevron.classList.add("is-floating");
       heroChevron.style.left = `${start.left}px`;
       heroChevron.style.top = `${start.top}px`;
+      heroDirection?.classList.add("is-floating");
+      if (heroDirection) {
+        heroDirection.style.left = `${start.left}px`;
+        heroDirection.style.top = `${start.top}px`;
+      }
       requestAnimationFrame(() => {
         heroChevron.style.left = `${window.innerWidth - start.width - 18}px`;
         heroChevron.style.top = `${headerBottom + 14}px`;
+        if (heroDirection) {
+          heroDirection.style.left = `${window.innerWidth - 18 - 14}px`;
+          heroDirection.style.top = `${headerBottom + 14 + 7}px`;
+        }
       });
       return;
     }
 
     heroMenuRoot.classList.remove("is-floating");
+    heroMenuRoot.classList.remove("is-side-menu-open");
     heroChevron.classList.remove("is-floating");
+    heroDirection?.classList.remove("is-floating");
     restoreTimer = window.setTimeout(() => {
       heroChevron.style.left = "";
       heroChevron.style.top = "";
+      if (heroDirection) {
+        heroDirection.style.left = "";
+        heroDirection.style.top = "";
+      }
     }, 260);
   };
 
