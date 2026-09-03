@@ -1,11 +1,8 @@
 import { normalizeGalleryData, stripNumericPrefix, toSlug } from "./gallery-data.js";
 
 const gallerySectionsRoot = document.querySelector(".gallery-sections");
-const heroMenuRoot = document.querySelector(".hero-category-menu");
 const heroToggle = document.querySelector(".hero-category-toggle");
 const heroPanel = document.querySelector(".hero-category-panel");
-const heroChevron = document.querySelector(".hero-category-chevron");
-const heroDirection = document.querySelector(".hero-category-direction");
 const sectionMenus = Array.from(document.querySelectorAll(".section-menu-toggle"))
   .map((toggle) => {
     const menuRoot = toggle.closest(".desktop-section-menu, .mobile-section-menu");
@@ -86,7 +83,6 @@ function closeSectionMenu() {
     heroPanel.classList.remove("is-open");
     window.setTimeout(() => {
       if (heroToggle.getAttribute("aria-expanded") !== "true") {
-        heroMenuRoot?.classList.remove("is-side-menu-open");
         heroPanel.hidden = true;
       }
     }, 220);
@@ -218,9 +214,6 @@ function wireHeroCategoryMenu(sections) {
       return;
     }
 
-    if (heroMenuRoot.classList.contains("is-floating")) {
-      heroMenuRoot.classList.add("is-side-menu-open");
-    }
     heroPanel.hidden = false;
     heroToggle.setAttribute("aria-expanded", "true");
     heroToggle.classList.add("is-open");
@@ -243,60 +236,6 @@ function wireHeroCategoryMenu(sections) {
     }
   });
   document.addEventListener("click", closeSectionMenu);
-
-  let isFloating = false;
-  let restoreTimer;
-
-  const updateChevronPosition = () => {
-    const header = document.querySelector(".site-header");
-    const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
-    const shouldFloat = heroToggle.getBoundingClientRect().bottom <= headerBottom + 8;
-
-    if (shouldFloat === isFloating) {
-      return;
-    }
-
-    isFloating = shouldFloat;
-    window.clearTimeout(restoreTimer);
-
-    if (shouldFloat) {
-      const start = heroChevron.getBoundingClientRect();
-      heroMenuRoot.classList.add("is-floating");
-      heroChevron.classList.add("is-floating");
-      heroChevron.style.left = `${start.left}px`;
-      heroChevron.style.top = `${start.top}px`;
-      heroDirection?.classList.add("is-floating");
-      if (heroDirection) {
-        heroDirection.style.left = `${start.left}px`;
-        heroDirection.style.top = `${start.top}px`;
-      }
-      requestAnimationFrame(() => {
-        heroChevron.style.left = `${window.innerWidth - start.width - 18}px`;
-        heroChevron.style.top = `${headerBottom + 14}px`;
-        if (heroDirection) {
-          heroDirection.style.left = `${window.innerWidth - 18 - 14}px`;
-          heroDirection.style.top = `${headerBottom + 14 + 7}px`;
-        }
-      });
-      return;
-    }
-
-    heroMenuRoot.classList.remove("is-floating");
-    heroMenuRoot.classList.remove("is-side-menu-open");
-    heroChevron.classList.remove("is-floating");
-    heroDirection?.classList.remove("is-floating");
-    restoreTimer = window.setTimeout(() => {
-      heroChevron.style.left = "";
-      heroChevron.style.top = "";
-      if (heroDirection) {
-        heroDirection.style.left = "";
-        heroDirection.style.top = "";
-      }
-    }, 260);
-  };
-
-  window.addEventListener("scroll", updateChevronPosition, { passive: true });
-  window.addEventListener("resize", updateChevronPosition);
 }
 
 loadGalleryData().then((rawGalleryData) => {

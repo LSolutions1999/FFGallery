@@ -660,46 +660,11 @@ main {
   margin-left: 1rem;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.55));
-  transition: transform 220ms ease, filter 180ms ease, left 260ms ease, top 260ms ease;
+  transition: transform 220ms ease, filter 180ms ease;
 }
 
 .hero-category-toggle.is-open .hero-category-chevron {
   transform: rotate(180deg);
-}
-
-.hero-category-chevron.is-floating {
-  position: fixed;
-  z-index: 70;
-  width: 2.6rem;
-  height: 2.6rem;
-  margin: 0;
-  pointer-events: auto;
-  transform: rotate(180deg) scale(1.05);
-  filter:
-    drop-shadow(0 0 7px rgba(229, 197, 106, 0.7))
-    drop-shadow(0 0 16px rgba(229, 197, 106, 0.3));
-}
-
-.hero-category-direction {
-  display: none;
-}
-
-.hero-category-direction.is-floating {
-  position: fixed;
-  z-index: 71;
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-right: 2px solid var(--gold-soft);
-  border-bottom: 2px solid var(--gold-soft);
-  transform: rotate(-45deg);
-  pointer-events: none;
-  transition: left 260ms ease, top 260ms ease, transform 220ms ease;
-  filter: drop-shadow(0 0 6px rgba(229, 197, 106, 0.65));
-}
-
-.hero-category-menu.is-floating.is-side-menu-open .hero-category-direction {
-  transform: rotate(135deg);
 }
 
 .hero-category-panel {
@@ -708,34 +673,6 @@ main {
   top: calc(100% + 0.65rem);
   width: 100%;
   text-align: left;
-}
-
-.hero-category-menu.is-floating .hero-category-panel {
-  position: fixed;
-  top: calc(var(--header-h) + 3.5rem);
-  right: 1rem;
-  left: auto;
-  width: min(340px, calc(100vw - 2rem));
-}
-
-.hero-category-menu.is-floating.is-side-menu-open .hero-category-panel:not(.is-open) {
-  transform: translateX(-100%);
-}
-
-.hero-category-menu.is-floating.is-side-menu-open .hero-category-panel {
-  top: var(--header-h);
-  right: auto;
-  bottom: 0;
-  left: 0;
-  width: min(360px, 88vw);
-  max-height: none;
-  height: calc(100vh - var(--header-h));
-  transform: translateX(0);
-  overflow-y: auto;
-  border-left: 0;
-  border-top: 1px solid rgba(229, 197, 106, 0.35);
-  border-bottom: 1px solid rgba(229, 197, 106, 0.35);
-  box-shadow: 18px 18px 42px rgba(0, 0, 0, 0.38);
 }
 
 .hero-button:hover,
