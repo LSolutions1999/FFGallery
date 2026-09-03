@@ -192,49 +192,6 @@ img {
   gap: 1.2rem;
 }
 
-.desktop-subheader {
-  display: none;
-}
-
-.gallery-page .desktop-subheader--gallery {
-  display: flex;
-  position: fixed;
-  left: 1rem;
-  top: calc(var(--header-h) + 0.5rem);
-  justify-content: flex-start;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  z-index: 60;
-}
-
-.desktop-section-menu {
-  position: relative;
-  pointer-events: auto;
-}
-
-.desktop-section-menu .section-menu-panel {
-  left: 0;
-  right: auto;
-  width: min(340px, calc(100vw - 2rem));
-}
-
-.mobile-section-menu {
-  display: none;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-}
-
-.mobile-section-menu .section-menu-panel {
-  left: 0;
-  right: auto;
-  width: min(320px, calc(100vw - 1rem));
-}
-
 .section-pill {
   display: inline-flex;
   align-items: center;
@@ -329,23 +286,6 @@ main {
   margin: 0 auto;
 }
 
-.header-logo-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: calc(50% + 0.45rem);
-  width: clamp(44px, 4.4vw, 64px);
-  height: clamp(44px, 4.4vw, 64px);
-  background: url("assets/downchevron.png") center center / contain no-repeat;
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(180deg);
-  filter:
-    drop-shadow(0 0 6px rgba(229, 197, 106, 0.65))
-    drop-shadow(0 0 12px rgba(229, 197, 106, 0.25));
-  pointer-events: none;
-  transition: opacity 180ms ease, transform 180ms ease, filter 180ms ease;
-}
-
 .header-banner {
   display: block;
   width: 100%;
@@ -363,16 +303,6 @@ main {
     drop-shadow(0 0 8px rgba(229, 197, 106, 0.45))
     drop-shadow(0 0 20px rgba(229, 197, 106, 0.22))
     drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
-}
-
-.header-logo-link:hover::after,
-.header-logo-link:focus-visible::after {
-  opacity: 1;
-  transform: translate(-50%, -50%) rotate(180deg) scale(1.08);
-  filter:
-    blur(0.5px)
-    drop-shadow(0 0 8px rgba(229, 197, 106, 0.7))
-    drop-shadow(0 0 16px rgba(229, 197, 106, 0.28));
 }
 
 .header-overlay {
@@ -690,6 +620,59 @@ main {
     0 0 20px rgba(229, 197, 106, 0.18),
     0 8px 30px rgba(0, 0, 0, 0.22);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.hero-category-menu {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 2.2rem;
+  width: min(100%, 500px);
+}
+
+.hero-category-toggle {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.gallery-hero .hero-category-toggle {
+  margin-top: 0;
+}
+
+.hero-category-chevron {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.55));
+  transition: transform 220ms ease, filter 180ms ease, left 260ms ease, top 260ms ease;
+}
+
+.hero-category-toggle.is-open .hero-category-chevron {
+  transform: rotate(180deg);
+}
+
+.hero-category-chevron.is-floating {
+  position: fixed;
+  z-index: 70;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0;
+  pointer-events: none;
+  transform: rotate(180deg) scale(1.05);
+  filter:
+    drop-shadow(0 0 7px rgba(229, 197, 106, 0.7))
+    drop-shadow(0 0 16px rgba(229, 197, 106, 0.3));
+}
+
+.hero-category-panel {
+  left: 0;
+  right: 0;
+  top: calc(100% + 0.65rem);
+  width: 100%;
+  text-align: left;
 }
 
 .hero-button:hover,
@@ -1076,20 +1059,6 @@ body:not(.gallery-page) .contact-section {
   .mobile-header-links--left,
   .mobile-header-links--right {
     display: flex;
-  }
-
-  .gallery-page .desktop-subheader--gallery {
-    display: flex;
-    position: fixed;
-    left: 0.5rem;
-    top: calc(var(--header-h) + 0.35rem);
-    justify-content: flex-start;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    border: 0;
-    z-index: 60;
   }
 
   .desktop-socials--right {

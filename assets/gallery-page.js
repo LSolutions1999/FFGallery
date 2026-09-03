@@ -1,6 +1,10 @@
 import { normalizeGalleryData, stripNumericPrefix, toSlug } from "./gallery-data.js";
 
 const gallerySectionsRoot = document.querySelector(".gallery-sections");
+const heroMenuRoot = document.querySelector(".hero-category-menu");
+const heroToggle = document.querySelector(".hero-category-toggle");
+const heroPanel = document.querySelector(".hero-category-panel");
+const heroChevron = document.querySelector(".hero-category-chevron");
 const sectionMenus = Array.from(document.querySelectorAll(".section-menu-toggle"))
   .map((toggle) => {
     const menuRoot = toggle.closest(".desktop-section-menu, .mobile-section-menu");
@@ -75,6 +79,17 @@ function scrollToSection(sectionId, behavior = "smooth") {
 }
 
 function closeSectionMenu() {
+  if (heroToggle && heroPanel) {
+    heroToggle.setAttribute("aria-expanded", "false");
+    heroToggle.classList.remove("is-open");
+    heroPanel.classList.remove("is-open");
+    window.setTimeout(() => {
+      if (heroToggle.getAttribute("aria-expanded") !== "true") {
+        heroPanel.hidden = true;
+      }
+    }, 220);
+  }
+
   for (const menu of sectionMenus) {
     if (menu.closeTimer) {
       window.clearTimeout(menu.closeTimer);
@@ -180,6 +195,88 @@ function wireMenuButtons() {
   }
 }
 
+function wireHeroCategoryMenu(sections) {
+  if (!heroMenuRoot || !heroToggle || !heroPanel || !heroChevron) {
+    return;
+  }
+
+  heroPanel.innerHTML = sections
+    .map((section, index) => {
+      const targetId = `gallery-section-${toSlug(section.key) || index + 1}`;
+      return `<a class="section-pill" href="#${targetId}" data-target="${targetId}">${stripNumericPrefix(section.label)}</a>`;
+    })
+    .join("");
+
+  heroToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const isOpen = heroToggle.getAttribute("aria-expanded") === "true";
+
+    if (isOpen) {
+      closeSectionMenu();
+      return;
+    }
+
+    heroPanel.hidden = false;
+    heroToggle.setAttribute("aria-expanded", "true");
+    heroToggle.classList.add("is-open");
+    requestAnimationFrame(() => heroPanel.classList.add("is-open"));
+  });
+
+  heroPanel.addEventListener("click", (event) => {
+    const pill = event.target.closest(".section-pill");
+    if (!pill) {
+      event.stopPropagation();
+      return;
+    }
+
+    event.preventDefault();
+    const targetId = pill.getAttribute("data-target");
+    if (targetId) {
+      history.replaceState(null, "", `#${targetId}`);
+      closeSectionMenu();
+      scrollToSection(targetId);
+    }
+  });
+  document.addEventListener("click", closeSectionMenu);
+
+  let isFloating = false;
+  let restoreTimer;
+
+  const updateChevronPosition = () => {
+    const header = document.querySelector(".site-header");
+    const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+    const shouldFloat = heroToggle.getBoundingClientRect().bottom <= headerBottom + 8;
+
+    if (shouldFloat === isFloating) {
+      return;
+    }
+
+    isFloating = shouldFloat;
+    window.clearTimeout(restoreTimer);
+
+    if (shouldFloat) {
+      const start = heroChevron.getBoundingClientRect();
+      heroChevron.classList.add("is-floating");
+      heroChevron.style.left = `${start.left}px`;
+      heroChevron.style.top = `${start.top}px`;
+      requestAnimationFrame(() => {
+        heroChevron.style.left = `${window.innerWidth - start.width - 18}px`;
+        heroChevron.style.top = `${headerBottom + 14}px`;
+      });
+      return;
+    }
+
+    heroChevron.classList.remove("is-floating");
+    restoreTimer = window.setTimeout(() => {
+      heroChevron.style.left = "";
+      heroChevron.style.top = "";
+    }, 260);
+  };
+
+  window.addEventListener("scroll", updateChevronPosition, { passive: true });
+  window.addEventListener("resize", updateChevronPosition);
+}
+
 loadGalleryData().then((rawGalleryData) => {
   const sections = normalizeGalleryData(rawGalleryData);
 
@@ -192,6 +289,7 @@ loadGalleryData().then((rawGalleryData) => {
   }
 
   wireSectionMenus(sections);
+  wireHeroCategoryMenu(sections);
   gallerySectionsRoot.innerHTML = sections.map(renderSection).join("");
 
   gallerySectionsRoot.querySelectorAll("video.gallery-card-media").forEach((video) => {
