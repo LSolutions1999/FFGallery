@@ -8,7 +8,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_01",
+        "label": "SP_01_IMG",
         "public_id": "IMG_E0850_ppozjb",
         "version": 1788379152,
         "index": 3
@@ -18,7 +18,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_02",
+        "label": "SP_02_IMG",
         "public_id": "IMG_3481_t7rf3d",
         "version": 1781231077,
         "index": 59
@@ -28,7 +28,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_03",
+        "label": "SP_03_IMG",
         "public_id": "IMG_9085_jvlsmk",
         "version": 1781231300,
         "index": 58
@@ -38,7 +38,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_04",
+        "label": "SP_04_IMG",
         "public_id": "Photoroom_20250920_173235_bqatc0",
         "version": 1781231325,
         "index": 57
@@ -48,7 +48,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_05",
+        "label": "SP_05_IMG",
         "public_id": "93620CA5-29B3-4A3D-9C8E-4E2740B20E28_dewz5f",
         "version": 1781231378,
         "index": 54
@@ -58,7 +58,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_06",
+        "label": "SP_06_IMG",
         "public_id": "IMG_4264_hf2n2x",
         "version": 1781231465,
         "index": 52
@@ -68,7 +68,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_07",
+        "label": "SP_07_IMG",
         "public_id": "IMG_0852_mrduiw",
         "version": 1781233673,
         "index": 44
@@ -78,7 +78,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_08",
+        "label": "SP_08_IMG",
         "public_id": "IMG_6715_bdmgnh",
         "version": 1788379169,
         "index": 2
@@ -88,7 +88,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_09",
+        "label": "SP_09_IMG",
         "public_id": "IMG_6372_thdjan",
         "version": 1788378792,
         "index": 4
@@ -98,7 +98,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_10",
+        "label": "SP_10_IMG",
         "public_id": "IMG_4884_szwk0c",
         "version": 1781232082,
         "index": 50
@@ -108,7 +108,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "1 Signature Pieces",
         "tags": [],
-        "label": "IMG_SP_11",
+        "label": "SP_11_IMG",
         "public_id": "IMG_4882_lqetkf",
         "version": 1781232102,
         "index": 49
@@ -488,51 +488,11 @@ window.gallerySections = [
     "label": "Lapidary Solutions",
     "items": [
       {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
-        "mediaType": "image",
-        "folder": "5 Lapidary Solutions",
-        "tags": [],
-        "label": "IMG_0261_achvc6",
-        "public_id": "IMG_0261_achvc6",
-        "version": 1781232816,
-        "index": 47
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364723/IMG_1795_b9b9iq.jpg",
-        "mediaType": "image",
-        "folder": "5 Lapidary Solutions",
-        "tags": [],
-        "label": "IMG_1795_b9b9iq",
-        "public_id": "IMG_1795_b9b9iq",
-        "version": 1788364723,
-        "index": 32
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231747/IMG_2015_fkosoi.jpg",
-        "mediaType": "image",
-        "folder": "5 Lapidary Solutions",
-        "tags": [],
-        "label": "IMG_2015_fkosoi",
-        "public_id": "IMG_2015_fkosoi",
-        "version": 1781231747,
-        "index": 51
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364765/IMG_5636_gbhjwk.mov",
-        "mediaType": "video",
-        "folder": "5 Lapidary Solutions",
-        "tags": [],
-        "label": "IMG_5636_gbhjwk",
-        "public_id": "IMG_5636_gbhjwk",
-        "version": 1788364765,
-        "index": 31
-      },
-      {
         "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364776/IMG_E6184_izfqdf.mov",
         "mediaType": "video",
         "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_E6184_izfqdf",
+        "label": "LS_01_VID",
         "public_id": "IMG_E6184_izfqdf",
         "version": 1788364776,
         "index": 28
@@ -542,7 +502,7 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_E6190_ywrdto",
+        "label": "LS_02_IMG",
         "public_id": "IMG_E6190_ywrdto",
         "version": 1788364774,
         "index": 29
@@ -552,10 +512,50 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "5 Lapidary Solutions",
         "tags": [],
-        "label": "IMG_E6208_gosniw",
+        "label": "LS_03_IMG",
         "public_id": "IMG_E6208_gosniw",
         "version": 1788364772,
         "index": 30
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788364765/IMG_5636_gbhjwk.mov",
+        "mediaType": "video",
+        "folder": "5 Lapidary Solutions",
+        "tags": [],
+        "label": "LS_04_VID",
+        "public_id": "IMG_5636_gbhjwk",
+        "version": 1788364765,
+        "index": 31
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781231747/IMG_2015_fkosoi.jpg",
+        "mediaType": "image",
+        "folder": "5 Lapidary Solutions",
+        "tags": [],
+        "label": "LS_05_IMG",
+        "public_id": "IMG_2015_fkosoi",
+        "version": 1781231747,
+        "index": 51
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1788364723/IMG_1795_b9b9iq.jpg",
+        "mediaType": "image",
+        "folder": "5 Lapidary Solutions",
+        "tags": [],
+        "label": "LS_06_IMG",
+        "public_id": "IMG_1795_b9b9iq",
+        "version": 1788364723,
+        "index": 32
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781232816/IMG_0261_achvc6.jpg",
+        "mediaType": "image",
+        "folder": "5 Lapidary Solutions",
+        "tags": [],
+        "label": "LS_07_IMG",
+        "public_id": "IMG_0261_achvc6",
+        "version": 1781232816,
+        "index": 47
       }
     ]
   },
@@ -684,30 +684,30 @@ window.gallerySections = [
         "mediaType": "image",
         "folder": "7 Collaborations",
         "tags": [],
-        "label": "IMG_5463_rm7mwe",
+        "label": "CB_01_IMG",
         "public_id": "IMG_5463_rm7mwe",
         "version": 1788377190,
         "index": 7
-      },
-      {
-        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
-        "mediaType": "image",
-        "folder": "7 Collaborations",
-        "tags": [],
-        "label": "IMG_9562_2_dm6ikk",
-        "public_id": "IMG_9562_2_dm6ikk",
-        "version": 1781233056,
-        "index": 46
       },
       {
         "url": "https://res.cloudinary.com/dipwbqdkp/video/upload/v1788376753/NDEN5226_veaxhx.mp4",
         "mediaType": "video",
         "folder": "7 Collaborations",
         "tags": [],
-        "label": "NDEN5226_veaxhx",
+        "label": "CB_02_VID",
         "public_id": "NDEN5226_veaxhx",
         "version": 1788376753,
         "index": 10
+      },
+      {
+        "url": "https://res.cloudinary.com/dipwbqdkp/image/upload/v1781233056/IMG_9562_2_dm6ikk.jpg",
+        "mediaType": "image",
+        "folder": "7 Collaborations",
+        "tags": [],
+        "label": "CB_03_IMG",
+        "public_id": "IMG_9562_2_dm6ikk",
+        "version": 1781233056,
+        "index": 46
       }
     ]
   }
