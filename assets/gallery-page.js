@@ -194,7 +194,7 @@ function wireMenuButtons() {
 }
 
 function wireHeroCategoryMenu(sections) {
-  if (!heroMenuRoot || !heroToggle || !heroPanel || !heroChevron) {
+  if (!heroToggle || !heroPanel) {
     return;
   }
 
